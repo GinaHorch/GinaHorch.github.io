@@ -1,6 +1,6 @@
 #  Gina's - Portfolio Task
 ​
-[My portfolio site]((https://ginahorch.github.io/))
+[My portfolio site](https://ginahorch.github.io/)
 ​
 ## Project Requirements
 
