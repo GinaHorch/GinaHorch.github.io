@@ -1,8 +1,69 @@
+/* global colours */
 :root {
-    --brand: #989AFC;
-    --brand-alt: 
-    --action: #393A72;
-    --base-light: #FDFDFE;
-    --base-medium: #929278;
-    --base-dark: #1F1F3A;
+    --brand: #4141C7;
+    --brand-alt: #3434AD;
+    --action: #4B4B83;
+    --action-alt: #3C3C68;
+    --base-lightest: #FDFDFE;
+    --base-lighter: #F1F1F8;
+    --base-light: #E4E4F1;
+    --base-mid: #AEAEC3;
+    --base-dark: #1C1C35;
+    --base-darker: #151528
+    --base-darkest: #07070D;
+    --text: var(--base-darkest);
+}
+
+/* default font style */
+html, body {
+    font-family: "Oxygen", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* colour styles */
+
+.brand {
+    background-color: var(--brand);
+}
+
+.brand-alt {
+    background-color: var(--brand-alt);
+}
+
+.action {
+    background-color: var(--action);
+}
+
+.action-alt {
+    background-color: var(--action-alt);
+}
+
+.base-darkest {
+    background-color: var(--base-darkest);
+}
+
+.base-darker {
+    background-color: var(--base-darker);
+}
+
+.base-dark {
+    background-color: var(--base-dark);
+}
+
+.base-mid {
+    background-color: var(--base-mid);
+}
+
+.base-light {
+    background-color: var(--base-light);
+}
+
+.base-lighter {
+    background-color: var(--base-lighter);
+}
+
+.base-lightest {
+    background-color: var(--base-lightest);
 }
