@@ -13,7 +13,61 @@
     --base-darkest: #07070D;
     --text: var(--base-darkest);
 }
-
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: var(--black);
+    scroll-behavior: smooth;
+  }
+ 
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+ 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Rubik", sans-serif;
+  }
+ 
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  ol,
+  ul {
+    list-style: none;
+  }
+ 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+  
 /* default font style */
 html, body {
     font-family: "Oxygen", sans-serif;
