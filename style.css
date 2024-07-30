@@ -67,3 +67,7 @@ html, body {
 .base-lightest {
     background-color: var(--base-lightest);
 }
+
+h1 {
+    border: 1px solid red;
+}
