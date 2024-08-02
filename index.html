@@ -3,46 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Profile</title>
+    <link rel="icon" type="image/png" href="./img/logo.svg">
+    <title>Gina's Profile</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="mobile-header">
-            <button type="button" class="hamburger-button">
-                <img class="hamburger-icon" src="../my_first_website/img/hamburger.svg"
-                    alt="Three horizontal lines, positioned one above the other." />
-            </button>
+    <header class="checkbox">
+        <!-- navigation -->
+        <a class="header-logo" href="https://github.com/GinaHorch">
+            <img class="logo" src="./img/logo-header.png" alt="Gina's logo, a red half circle with green leaves shooting upwards" />
+        </a>
+        <input type="checkbox" class="open-menu">
+        <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
         </div>
-        <nav class="mobile-nav display-none" aria-label="Primary">
+       <div class="ally-pledge" href="https://pages.evolves.com.au/pledge">
+            <img class="logo" 
+                src="img/ally-pledge.webp" 
+                alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
+                width="200px"
+                />
+       </div>
+        <nav class="menu">
             <ul>
                 <li>
-                    <a href="#">About me</a>
+                    <a href="#about.html">About</a>
                 </li>
                 <li>
-                    <a href="#">Previous projects</a>
+                    <a href="#projects.html">Previous projects</a>
                 </li>
                 <li>
-                    <a href="#">My skills</a>
-                </li>
-                <li class="test">
-                    <a href="#">Get in touch</a>
+                    <a href="#skills.html">My skills</a>
                 </li>
                 <li>
-                    <a href="#">Acknowledgement</a>
+                    <a href="#contact.html">Get in touch</a>
+                </li>
+                <li>
+                    <a href="#acknowledgement.html">Acknowledgement</a>
                 </li>
             </ul>
         </nav> 
     </header>
-    <section class="hero">
-        <h1>Not sure what to put in the landing hero</h1>
-        <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/48/Silly_Dog_%282277051513%29.jpg"
-            alt="A silly looking dog."
-            width="400px"
-        />
+    <section class="landing-hero">
+        <!-- use div for flex container -->
+         <div>
+            <img
+                src="./img/water.jpeg"
+                alt="Calm water, sky with some small clouds, shore line with trees."
+                width="400px"
+            />
+         </div>
+         <div class="landing-hero-text">
+            <h1>Gina "Geena" Horch</h1>
+         </div>
     </section>
-    <!-- about me section -->
+    <!-- about me -->
     <section class="about">
         <div class="bio-text">
             <h2>About me</h2>
@@ -56,16 +74,7 @@
             <p>I am now eager to bring my extensive background in investigation, research, and trauma-informed practice to the tech industry. My goal is to leverage technology to create solutions that enhance safety, foster resilience and well-being, and empower vulnerable populations. I believe that with my unique perspective and commitment to ethical practices, I can contribute meaningfully to tech innovations that align with my passion for reconcilition and improving lives of victim-survivors.</p>
         </div>
 
-        <div class="award">
-            <h3>9News Police Excellence Award 2017</h3>
-
-            <img
-                src="#"
-                alt="Photo of Gina receiving the 2017 Police Excellence Award"
-                width="400px"
-            />
-        </div>
-       
+              
         <div class="resume">
 
         <a href="#" class="resume">My resume</a>
@@ -77,8 +86,9 @@
     <section class="projects">
         <h2>My previous projects</h2>
        <article>
-           <img class="icon" src="#"
-               alt="Description of image" />
+           <img class="icon" 
+                src="./img/odin-recipes.png"
+                alt="The Odin Project Foundations Course image of the recipes project" />
            <h3 class="not sure">The Odin Project: Recipes</h3>
            <p>
                As part of The Odin Project curriculum, I built a basic recipe website practising with HTML.
@@ -86,8 +96,9 @@
            <a href="#" class="btn-primary">Maybe GitHubLink</a>
        </article>
        <article>
-           <img class="icon" src="#"
-               alt="Description of image" />
+           <img class="icon" 
+                src="#"
+                alt="Description of image" />
            <h3>The Odin Project: Landing page</h3>
            <p>
                As part of The Odin Project curriculum, I created this example landing page using HTML and CSS.
@@ -95,8 +106,9 @@
            <a href="#" class="btn-primary">Maybe GitHubLink</a>
        </article>
        <article>
-           <img class="icon" src="#"
-               alt="Description of image" />
+           <img class="icon" 
+                src="#"
+                alt="Description of image" />
            <h3>The Odin Project: Rock Paper Scissors</h3>
            <p>
             As part of The Odin Project curriculum, I created a Rock Paper Scissors game using HTML and JavaScript.
@@ -111,19 +123,21 @@
          As part of The Odin Project curriculum, I completed the Etch-a-Sketch Assignment using HTML, JavaScript, and CSS.
         </p>
         <a href="#" class="btn-primary">Maybe GitHubLink</a>
-    </article>
-    <article>
-        <img class="icon" src="#"
-            alt="Description of image" />
+        </article>
+        <article>
+            <img class="icon" 
+                src="#"
+                alt="Description of image" />
         <h3>The Odin Project: Calculator</h3>
         <p>
          As final project of The Odin Project curriculum, I created an on-screen calculator using HTML, CSS, and JavaScript.
         </p>
         <a href="#" class="btn-primary">Maybe GitHubLink</a>
-    </article>
-    <article>
-        <img class="icon" src="#"
-            alt="Description of image" />
+        </article>
+        <article>
+            <img class="icon" 
+                src="#"
+                alt="Description of image" />
         <h3>SheCodesAustralia: My first website</h3>
         <p>
          As part of the She Codes Plus curriculum, I created a responsive website using HTML and CSS.
@@ -158,12 +172,18 @@
         <p>Write acknowledgement</p>
    <footer>
         <a href="#" title="LinkedIn">
-            <img class="socials-icon" src="#"
-                alt="The LinkedIn logo: describe" />
+            <img class="socials-icon" 
+                 src="./img/linkedin_logo.webp"
+                 alt="The LinkedIn logo: a blue square with the white letter IN in the centre" 
+                 width="100px"
+            />
         </a>
         <a href="#">
-            <img class="socials-icon" src="#"
-                alt="The GitHub logo: a black circle with the silhouette of a white cat, with one tentacle arm" />
+            <img class="socials-icon" 
+                 src="./img/github.svg"
+                 alt="The GitHub logo: a black circle with the silhouette of a white cat, with one tentacle arm" 
+                 width="100px"
+            />
         </a>
    </footer>
 </body>
