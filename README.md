@@ -7,7 +7,7 @@
 ### Content
  Add a short paragraph describing the features below. What aesthetic and technical choices did you make? 
 - [ ] At least one profile picture
-- [x] Biography (at least 100 words)
+- [X] Biography (at least 100 words)
 - [ ] Functional Contact Form
 - [ ] "Projects" section
 - [ ] Links to external sites, e.g. GitHub and LinkedIn.
@@ -17,7 +17,7 @@
  Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
 - [ ] At least 2 web pages.
 - [ ] Version controlled with Git
-- [x] Deployed on GitHub pages.
+- [X] Deployed on GitHub pages.
 - [ ] Implements responsive design principles.
 - [ ] Uses semantic HTML.
 
