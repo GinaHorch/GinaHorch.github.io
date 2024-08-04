@@ -149,25 +149,31 @@ html, body {
     text-decoration: none;
  }
 
-/* Navbar */
+/* Header */
 
 header {
     display: flex;
     justify-content: space-between;
     background-color: var(--brand);
     color: var(--text);
-    padding: 1rem 1rem;
+    padding: 0 20px;
+    margin: 0;
 }
 
 .flags {
-    padding: 0.5rem;
+    padding: 5px;
+    
 }
+
+/* Navbar */
 
 nav .left {
     color: var(--text);
     font-size: 20px;
     font-weight: 600;
     align-self: flex-start;
+    margin-top: 5px;
+    
 }
 
 details .burger-icon {
@@ -187,20 +193,152 @@ details ul {
     list-style-type: none;
 }
 
-@media (min-width: 768px) {
-    nav {
+header nav ul {
+    display: flex;
+    gap: 24px;
+    margin-right: 16px;
+  }
+
+/* Section 1: Acknowledgement */
+
+.acknowledgement {
+    padding: 1rem;
+    
+}
+
+.acknowledgement h2 {
+    
+}
+/* Section 2: Hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.hero .hero-text {
+    flex: 4;
+}
+
+.hero .hero-text h1 {
+    font-size: 40px;
+}
+.hero .hero-text p {
+    margin-top: 5px;
+}
+.hero .hero-text .hero-links {
+    margin-top: 15px;
+}
+
+.hero .hero-text .hero-links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--action);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+    font-size: 15px;
+}
+
+.hero .hero-text .hero-links a:hover {
+    color: var(--action);
+    background-color: var(--base-mid);
+} 
+
+.hero .hero-image {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero .hero-image img {
+    border-radius: 50%;
+    width: 350px;
+}
+
+/* Section 3: About */
+.bio-text a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--action);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+    font-size: 15px;
+}
+
+.hero .hero-text .hero-links a:hover {
+    color: var(--action);
+    background-color: var(--base-mid);
+} 
+
+@media (max-width: 720px) {
+    /* Header */
+    header {
       display: flex;
       justify-content: space-between;
-      align-items: center;
+      
     }
   
-    nav ul {
+    details[open] #menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    header nav ul {
       display: flex;
       gap: 24px;
       margin-right: 16px;
     }
-     
+    /* Section 2: Hero */
+    .hero .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero .hero-image img {
+        width: 250px;
+    }
   }
+  
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        padding: 0 10px;
+    }
+
+    details[open] #menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 15px;
+        font-weight: 400;
+    }
+
+    .flags {
+        padding: 0.2rem;
+        /* need to make flags go smaller */
+        
+    }
+     /* Section 2: Hero */
+    .hero .hero-text h1 {
+        font-size: 20px;
+    }
+
+    .hero {
+        padding: 0
+    }
+}
    
  
 /* footer */
