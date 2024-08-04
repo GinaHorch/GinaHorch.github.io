@@ -461,6 +461,50 @@ header nav ul {
     width: 200px;
 }
 
+/* Section 6: Contact */
+
+.contact-form {
+    background-color: var(--brand);
+    color: var(--base-lightest);
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 48px 16px;
+}
+
+.contact-form input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+}
+
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.contact-form label {
+    display: block;
+    width: 100%;
+}
+
+.contact-form h2 {
+    font-size: 35px;
+}
+
+.contact-form form button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 16px;
+    background-color: var(--action);
+    border: 1px solid var(--base-lightest);
+    cursor: pointer;
+}
+
 
 @media (max-width: 720px) {
     /* Header */
@@ -585,15 +629,30 @@ header nav ul {
 /* footer */
 
 footer {
+    padding: 16px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 footer span {
     display: flex;
+    justify-content: center;
     align-items: center;
     color: var(--text);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
+}
+
+footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials-icon,
+.ally {
+    width: 100px;
+    height: 100px;
 }

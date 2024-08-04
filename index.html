@@ -173,28 +173,40 @@
                     </a>
                 </article>
         </div>
-    </section>
-
-      
+    </section>      
 
         <!-- Section 6: Contact -->
    <section id="contact" class="contact-form">
         <h2>Get in touch</h2>
-        <form>
-            <label for="your-name">Your Name</label>
-            <input type="text" id="your-name">
-            <label for="your-organisation">Your Organisation</label>
-            <input type="text" id="your-organisation">
-            <label for="your-email">Your Email</label>
-            <input type="text" id="your-email">
-            <label for="message">Your Message</label>
-            <textarea name="message-text" id="message" rows="10"></textarea>
-            <input type="submit" value="Submit">
+        <form action="https://formspree.io/f/xanwovlb" method="post">
+
+            <div class="form-group">
+                <label for="your-name">Your Name</label>
+                <input type="text" id="your-name">
+            </div>
+
+            <div class="form-group">
+                <label for="your-organisation">Your Organisation</label>
+                <input type="text" id="your-organisation">
+            </div>
+
+            <div class="form-group">
+                <label for="your-email">Your Email</label>
+                <input type="text" id="your-email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" rows="10"></textarea>
+            </div>
+
+                <!-- <input type="submit" value="Submit"> -->
+            
+            <button type="submit">Send</button>
         </form>
    </section>
 
-
-    </main>
+</main>
 
    <footer>
         <a href="https://pages.evolves.com.au/pledge" title="AllyPledge" target="_blank" rel="noopener no-referrer">
@@ -203,6 +215,9 @@
                 alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
                 width="200px"
             />
+            <span>Take the pledge</span>
+        </a>
+
         <a href="https://www.linkedin.com/in/gina-horch" title="LinkedIn" target="_blank" rel="noopener no-referrer">
             <img class="socials-icon" 
                  src="./img/linkedin_logo.webp"
@@ -211,6 +226,7 @@
             />
             <span>Gina's LinkedIn</span>
         </a>
+        
         <a href="https://github.com/GinaHorch" title="GitHub" target="_blank" rel="noopener no-referrer">
             <img class="socials-icon" 
                  src="./img/github.svg"
