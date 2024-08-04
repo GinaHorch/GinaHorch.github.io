@@ -239,6 +239,7 @@ header nav ul {
     
 .hero .hero-text {
     flex: 8;
+    text-align: center;
 }
 
 .hero .hero-text h1 {

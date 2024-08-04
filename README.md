@@ -1,4 +1,4 @@
-#  Gina's - Portfolio Task
+#  Gina's - Portfolio Task - Done is better than perfect
 ​
 [My portfolio site] (https://ginahorch.github.io/) 
 ​
@@ -23,6 +23,7 @@
  Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
 - [X] At least 2 web pages.
     Links to about.html and projects.html.
+    Internal links to About me, My skills, My tech projects and Get in touch.
 - [X] Version controlled with Git
     Used development branch, frequent commits and final push.
 - [X] Deployed on GitHub pages.
@@ -34,15 +35,44 @@
 
 ### Bonus (optional)
  Add a short paragraph describing the features below, if you included any. 
-- [ ] Different styles for active, hover and focus states.
+- [X] Different styles for active, hover and focus states.
+    I added hover; however, the colour choices are not great, I need to keep working on this.
 - [ ] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
+    Not yet.
 ​
 ### Screenshots
 > Please include the following:
 > - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
+    
 > - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.  
-> 
+     I ran out of time to figure out how to take screenshots of hovering features and I ran out of time to add responsiveness to lots of areas.
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
-####  image_title_goes_here 
-![Put a description of your image here](./relative_path_to_file)
+My apologies, I did run out of time. I will continue working on it.
+
+####  screenshot-home-page-desktop 
+![Image of the home page, desktop screen size](./GinaHorch.github.io/screen-shots/screenshot-home-page-desktop.png)
+
+####  screenshot-home-page-hamburger-menu 
+![Image of the home page, desktop screen size, open hamburger menu](./GinaHorch.github.io/screen-shots/screenshot-home-page-hamburger-menu.png)
+
+####  screenshot-home-page-450px1
+![Image of the home page, mobile device, first part including header](./GinaHorch.github.io/screen-shots/screenshot-home-page450px1.png)
+
+####  screenshot-home-page-450px2
+![Image of the home page, mobile device, second part including skills](./GinaHorch.github.io/screen-shots/screenshot-home-page450px2.png)
+
+####  screenshot-home-page-450px3
+![Image of the home page, mobile device, third part including footer](./GinaHorch.github.io/screen-shots/screenshot-home-page450px3.png)
+
+####  screenshot-home-page-700px1
+![Image of the home page, tablet device, first part including header](./GinaHorch.github.io/screen-shots/screenshot-home-page700px1.png)
+
+####  screenshot-home-page-700px2
+![Image of the home page, tablet device, first part including skills](./GinaHorch.github.io/screen-shots/screenshot-home-page700px2.png)
+
+####  screenshot-home-page-700px3
+![Image of the home page, tablet device, first part including footer](./GinaHorch.github.io/screen-shots/screenshot-home-page700px3.png)
+
+####  screenshot-form-submission
+![Image of the successful form submission](./GinaHorch.github.io/screen-shots/screenshot-form-submission.png)
