@@ -160,12 +160,18 @@ header {
     margin: 0;
 }
 
-.flags {
-    padding: 5px;
-    
+/* Navbar */ 
+
+nav .right {
+    display: flex;
 }
 
-/* Navbar */
+.flags {
+    width: 70px;
+    height: 50px;  
+    object-fit: contain;  
+    padding: 5px;
+}
 
 nav .left {
     color: var(--text);
@@ -202,13 +208,19 @@ header nav ul {
 /* Section 1: Acknowledgement */
 
 .acknowledgement {
-    padding: 1rem;
-    
+    padding: 0 20px;
 }
 
 .acknowledgement h2 {
-    
+    font-size: 35px;
+    text-align: center;
 }
+
+.acknowledgement p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 /* Section 2: Hero */
 
 .hero {
@@ -218,6 +230,8 @@ header nav ul {
     padding: 1rem;
     margin: 20px 0;
     gap: 20px;
+    background-color: var(--brand);
+    color: var(--base-lightest);
 }
 
 .hero .hero-text {
@@ -225,7 +239,8 @@ header nav ul {
 }
 
 .hero .hero-text h1 {
-    font-size: 40px;
+    font-size: 35px;
+    text-align: center;
 }
 .hero .hero-text p {
     margin-top: 5px;
@@ -237,7 +252,7 @@ header nav ul {
 .hero .hero-text .hero-links a {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid var(--action);
+    border: 2px solid var(--base-dark);
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -259,11 +274,29 @@ header nav ul {
 .hero .hero-image img {
     border-radius: 50%;
     width: 350px;
+    border: 1px solid var(--base-light);
 }
 
 /* Section 3: About */
+
+.bio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bio-text h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.bio-text p {
+    text-align: center;
+}
+
 .bio-text a {
-    display: inline-block;
+    display: c;
     padding: 5px 10px;
     border: 2px solid var(--action);
     border-radius: 5px;
@@ -271,12 +304,63 @@ header nav ul {
     margin-bottom: 10px;
     transition: .1s;
     font-size: 15px;
+    align-self: center;
 }
 
 .hero .hero-text .hero-links a:hover {
     color: var(--action);
     background-color: var(--base-mid);
 } 
+
+/* Section 4: My tech Skills */
+
+.skills-section {
+    padding: 0 20px;
+    margin-bottom: 10px;
+    background-color: var(--brand);
+    color: var(--base-lightest)
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1.5px solid var(--base-dark);
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 18px;
+    padding: 5px;
+}
+
 
 @media (max-width: 720px) {
     /* Header */
@@ -289,7 +373,7 @@ header nav ul {
     details[open] #menu {
         display: flex;
         flex-direction: column;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 400;
     }
 
@@ -298,7 +382,12 @@ header nav ul {
       gap: 24px;
       margin-right: 16px;
     }
+    
+    /* Section 1: Acknowledgement */
+    
+
     /* Section 2: Hero */
+
     .hero .hero-text h1 {
         font-size: 30px;
     }
@@ -310,9 +399,25 @@ header nav ul {
     .hero .hero-image img {
         width: 250px;
     }
+
+    /* Section 3: About */
+
+    .bio-text h2 {
+        font-size: 25px;
+    }
+    /* Section 4: My tech Skills */
+
+    .skills-section {
+        padding: 0 15px;
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 16px;
+    }
   }
   
 @media (max-width: 480px) {
+    
     /* Header */
     header {
         padding: 0 10px;
@@ -326,10 +431,14 @@ header nav ul {
     }
 
     .flags {
-        padding: 0.2rem;
+        padding: 0 2px;
         /* need to make flags go smaller */
         
     }
+
+    /* Section 1: Acknowledgement */
+
+
      /* Section 2: Hero */
     .hero .hero-text h1 {
         font-size: 20px;
@@ -338,7 +447,22 @@ header nav ul {
     .hero {
         padding: 0
     }
-}
+
+    .hero .hero-image img {
+        width: 200px;
+    }
+
+    /* Section 3: About */
+
+    .bio-text h2 {
+        font-size: 20px;
+    }
+    /* Section 4: My tech Skills */
+    .skills-section {
+        padding: 0;
+    }
+  }
+
    
  
 /* footer */
