@@ -11,7 +11,7 @@
     --base-dark: #1C1C35;
     --base-darker: #151528
     --base-darkest: #07070D;
-    --text: var(--base-darkest);
+    --text: --black;
 }
 /* CSS Reset */
 html {
@@ -70,7 +70,7 @@ html {
 
 /* default font style */
 html, body {
-    font-family: "Oxygen", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -126,28 +126,95 @@ html, body {
     display: none;
  }
 
- /* header */
- .checkbox {
-    display: flex;
-    align-items: center;
- }
-
- header {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--brand);
- }
-
  * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
  }
 
- header a {
-    display: inline-block;
-    color: var(--base-light);
-    font-size: 1.6rem;
+ html {
+    scroll-behavior: smooth;
+ }
+
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--base-lightest);
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+ }
+
+ a {
+    color: var(--text);
     text-decoration: none;
  }
+
+/* Navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--brand);
+    color: var(--text);
+    padding: 1rem 1rem;
+}
+
+.flags {
+    padding: 0.5rem;
+}
+
+nav .left {
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 600;
+    align-self: flex-start;
+}
+
+details .burger-icon {
+    transition: transform 0.1s;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+}
+
+details[open] .burger-icon {
+    transform: rotate(90deg);
+}
+  
+summary, 
+details ul {
+    display: flex;
+    list-style-type: none;
+}
+
+@media (min-width: 768px) {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    nav ul {
+      display: flex;
+      gap: 24px;
+      margin-right: 16px;
+    }
+     
+  }
+   
+ 
+/* footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer span {
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    font-size: 16px;
+    font-weight: 400;
+}

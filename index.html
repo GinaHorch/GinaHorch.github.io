@@ -3,51 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" type="image/png" href="./img/logo.svg">
-    <title>Gina's Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+
+    <title>Gina's Portfolio</title>
 </head>
 
 <body>
-    <header class="checkbox">
-        <!-- navigation -->
-        <a class="header-logo" href="https://github.com/GinaHorch">
-            <img class="logo" src="./img/logo-header.png" alt="Gina's logo, a red half circle with green leaves shooting upwards" />
-        </a>
-        <input type="checkbox" class="open-menu">
-        <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-        </div>
-       <div class="ally-pledge" href="https://pages.evolves.com.au/pledge">
-            <img class="logo" 
-                src="img/ally-pledge.webp" 
-                alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
-                width="200px"
-                />
-       </div>
-        <nav class="menu">
-            <ul>
-                <li>
-                    <a href="#about.html">About</a>
-                </li>
-                <li>
-                    <a href="#projects.html">Previous projects</a>
-                </li>
-                <li>
-                    <a href="#skills.html">My skills</a>
-                </li>
-                <li>
-                    <a href="#contact.html">Get in touch</a>
-                </li>
-                <li>
-                    <a href="#acknowledgement.html">Acknowledgement</a>
-                </li>
-            </ul>
+    <header>
+        <!-- navigation bar -->
+        <nav>
+            <div class="left">
+                <details>
+                    <summary>
+                        <div class="burger-icon"><svg aria-label="Navigation Menu" 
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 4h24M0 12h24M0 20h24" stroke="black" stroke-width="4" />
+                          </svg></div>
+                      </summary>
+                      <ul id="menu">
+                        <li><a href="/GinaHorch.github.io/">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./skills.html">My skills</a></li>   
+                        <li><a href="./projects.html">My projects</a></li>
+                        <li><a href="./contact.html">Get in touch</a></li>
+                      </ul>
+                </details>    
         </nav> 
+            <div class="right">
+                <img class="flags" src="./img/aboriginal_flag.png" alt="Aboriginal Flag" width="100px" />
+                <img class="flags" src="./img/TorresStraitIslanderFlag.jpg" alt="Torres Strait Islander Flag" width="100px" />
+                <img class="flags" src="./img/rainbow.png" alt="Rainbow Flag" width="100px" />
+            </div>
     </header>
-    <section class="landing-hero">
+
+    <main>
+        <!-- Section 1: Acknowledgement -->
+        <section class="acknowledgement">
+            <h2>Acknowledgement</h2>
+            <p>Write acknowledgement</p>
+    
+        <!-- Section 2: Hero -->
+        <section class="landing-hero">
         <!-- use div for flex container -->
          <div>
             <img
@@ -59,9 +63,10 @@
          <div class="landing-hero-text">
             <h1>Gina "Geena" Horch</h1>
          </div>
-    </section>
-    <!-- about me -->
-    <section class="about">
+            </section>
+
+        <!-- Section 3: About -->
+        <section id="about">
         <div class="bio-text">
             <h2>About me</h2>
 
@@ -73,19 +78,22 @@
 
             <p>I am now eager to bring my extensive background in investigation, research, and trauma-informed practice to the tech industry. My goal is to leverage technology to create solutions that enhance safety, foster resilience and well-being, and empower vulnerable populations. I believe that with my unique perspective and commitment to ethical practices, I can contribute meaningfully to tech innovations that align with my passion for reconcilition and improving lives of victim-survivors.</p>
         </div>
-
-              
+            
         <div class="resume">
 
         <a href="#" class="resume">My resume</a>
 
         </div>
-    </section>
+        </section>
 
-    <!-- previous project section -->
-    <section class="projects">
+        <!-- Section 4: My skills -->
+          <section id="skills">
+        </section>
+
+        <!-- Section 5: previous projects -->
+        <section id="projects">
         <h2>My previous projects</h2>
-       <article>
+        <article>
            <img class="icon" 
                 src="./img/odin-recipes.png"
                 alt="The Odin Project Foundations Course image of the recipes project" />
@@ -143,16 +151,13 @@
          As part of the She Codes Plus curriculum, I created a responsive website using HTML and CSS.
         </p>
         <a href="#" class="btn-primary">Maybe GitHubLink</a>
-    </article>
-   </section>
+        </article>
+        </section>
 
-    <!-- My skills section -->
-   <section class="skills">
-<!-- not sure how I will add skills -->
-    
-   </section>
-   <!-- My contact section -->
-   <section class="contact-form">
+      
+
+        <!-- Section 6: Contact -->
+   <section id="contact" class="contact-form">
         <h2>Get in touch</h2>
         <form>
             <label for="your-name">Your Name</label>
@@ -166,24 +171,32 @@
             <input type="submit" value="Submit">
         </form>
    </section>
-<!-- acknowledgement section -->
-    <section class="acknowledgement">
-        <h2>Acknowledgement</h2>
-        <p>Write acknowledgement</p>
+
+
+    </main>
+
    <footer>
-        <a href="#" title="LinkedIn">
+        <a href="https://pages.evolves.com.au/pledge" title="AllyPledge" target="_blank" rel="noopener no-referrer">
+            <img class="ally" 
+                src="img/ally-pledge.webp" 
+                alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
+                width="200px"
+            />
+        <a href="https://www.linkedin.com/in/gina-horch" title="LinkedIn" target="_blank" rel="noopener no-referrer">
             <img class="socials-icon" 
                  src="./img/linkedin_logo.webp"
                  alt="The LinkedIn logo: a blue square with the white letter IN in the centre" 
                  width="100px"
             />
+            <span>Gina's LinkedIn</span>
         </a>
-        <a href="#">
+        <a href="https://github.com/GinaHorch" title="GitHub" target="_blank" rel="noopener no-referrer">
             <img class="socials-icon" 
                  src="./img/github.svg"
                  alt="The GitHub logo: a black circle with the silhouette of a white cat, with one tentacle arm" 
                  width="100px"
             />
+            <span>Gina's GitHub</span>
         </a>
    </footer>
 </body>
