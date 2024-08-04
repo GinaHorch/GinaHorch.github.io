@@ -266,6 +266,7 @@ header nav ul {
 .hero .hero-text .hero-links a:hover {
     color: var(--action);
     background-color: var(--base-mid);
+    cursor: pointer;
 } 
 
 .hero .hero-image {
@@ -312,11 +313,12 @@ header nav ul {
     transition: .1s;
     font-size: 15px;
     align-self: center;
+    cursor: pointer;
 }
 
-.hero .hero-text .hero-links a:hover {
+.bio-text a:hover {
     color: var(--action);
-    background-color: var(--base-mid);
+    background-color: var(--base-lightest);
 } 
 
 /* Section 4: My tech Skills */
