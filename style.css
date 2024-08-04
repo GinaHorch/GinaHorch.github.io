@@ -208,17 +208,20 @@ header nav ul {
 /* Section 1: Acknowledgement */
 
 .acknowledgement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 0 20px;
 }
 
 .acknowledgement h2 {
-    font-size: 35px;
-    text-align: center;
+    font-size: 30px;
 }
 
 .acknowledgement p {
-    text-align: center;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* Section 2: Hero */
@@ -227,19 +230,19 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    margin: 20px 0;
+    padding: 0 20px;
+    margin: 0;
     gap: 20px;
     background-color: var(--brand);
     color: var(--base-lightest);
 }
-
+    
 .hero .hero-text {
-    flex: 4;
+    flex: 8;
 }
 
 .hero .hero-text h1 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
 }
 .hero .hero-text p {
@@ -269,6 +272,8 @@ header nav ul {
     flex: 2;
     display: flex;
     justify-content: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .hero .hero-image img {
@@ -284,10 +289,12 @@ header nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
+    border: 1px solid var(--action);
 }
 
 .bio-text h2 {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -296,7 +303,7 @@ header nav ul {
 }
 
 .bio-text a {
-    display: c;
+    display: flex;
     padding: 5px 10px;
     border: 2px solid var(--action);
     border-radius: 5px;
@@ -323,7 +330,7 @@ header nav ul {
 
 .skills-section h2 {
     text-align: center;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .skills-section .text {
@@ -361,6 +368,99 @@ header nav ul {
     padding: 5px;
 }
 
+/* Section 5: My tech projects */
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border: 1px solid var(--action);
+}
+
+.project-section h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.project-section .project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+    border: 1px solid var(--action);
+}
+
+.project-section .project-container {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.project-section .project-container .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    border: 1px solid var(--action);
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.project-section .project-container .recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    border: 1px solid var(--action);
+    padding: 5px;
+}
+    
+.project-section .project-text p,
+.project-section .project-container p,
+.project-section .more-projects p {
+    text-align: center;
+    padding: 5px;;
+}
+
+.project-section .project-container span {
+    text-align: center;
+    margin-left: 5px;
+}
+
+.project-section .project-text a,
+.project-section .project-container a {
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border: 2px solid var(--base-dark);
+    border-radius: 5px;
+    transition: .1s;
+    font-size: 15px;
+}
+
+.project-section .project-text .more-projects {
+    padding: 5px;
+    margin: 5px;
+}
+
+.project-section .project-text a:hover {
+    color: var(--action);
+    background-color: var(--base-mid);
+}
+
+.project-section .project-container a:hover {
+    color: var(--action);
+    background-color: var(--base-mid);
+}
+
+.project-section .project-container .icon {
+    display: flex;
+    width: 200px;
+}
+
 
 @media (max-width: 720px) {
     /* Header */
@@ -389,7 +489,7 @@ header nav ul {
     /* Section 2: Hero */
 
     .hero .hero-text h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .hero {
@@ -414,8 +514,19 @@ header nav ul {
     .skills-section .cells .cell span {
         font-size: 16px;
     }
+
+    /* Section 5: My tech projects */
+    .project-section {
+        padding: 0 15px;
+    }
+    .project-section .project-container span {
+        font-size: 16px;
+    }
+
   }
   
+
+
 @media (max-width: 480px) {
     
     /* Header */
@@ -461,6 +572,12 @@ header nav ul {
     .skills-section {
         padding: 0;
     }
+    
+    /* Section 5: My tech projects */
+    .project-section {
+    padding: 0;
+    }
+
   }
 
    
