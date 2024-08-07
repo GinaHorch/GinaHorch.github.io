@@ -152,6 +152,8 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-y: scroll;
+    max-width: 1500px;
+    margin: 0 auto;
  }
 
  a {
