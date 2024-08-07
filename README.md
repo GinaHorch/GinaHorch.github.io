@@ -1,6 +1,6 @@
 #  Gina's - Portfolio Task - Done is better than perfect
 ​
-[My portfolio site] (https://ginahorch.github.io/) 
+[My portfolio site](https://ginahorch.github.io/) 
 ​
 ## Project Requirements
 
