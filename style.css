@@ -132,8 +132,14 @@ html, body {
     box-sizing: border-box;
  }
 
+ html, body {
+    padding: 0;
+    margin: 0;
+ }
+
  html {
     scroll-behavior: smooth;
+    min-height: 100%;
  }
 
  body {
@@ -142,6 +148,10 @@ html, body {
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
  }
 
  a {
@@ -158,19 +168,23 @@ header {
     color: var(--text);
     padding: 0 20px;
     margin: 0;
+    overflow: hidden;
+}
+
+.right .rainbow {
+    display: flex;
+    width: 70px;
+    height: 50px;  
+    object-fit: contain;  
+    border: 1px solid var(--base-dark);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 /* Navbar */ 
 
 nav .right {
     display: flex;
-}
-
-.flags {
-    width: 70px;
-    height: 50px;  
-    object-fit: contain;  
-    padding: 5px;
 }
 
 nav .left {
@@ -212,7 +226,9 @@ header nav ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .acknowledgement h2 {
@@ -224,14 +240,25 @@ header nav ul {
     text-align: center;
 }
 
+.acknowledgement .flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70px;
+    height: 50px;  
+    object-fit: contain;  
+    padding: 5px;
+    gap: 10px;
+}
 /* Section 2: Hero */
 
 .hero {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    margin: 0;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     gap: 20px;
     background-color: var(--brand);
     color: var(--base-lightest);
@@ -271,7 +298,6 @@ header nav ul {
 } 
 
 .hero .hero-image {
-    flex: 2;
     display: flex;
     justify-content: right;
     margin-top: 5px;
@@ -280,19 +306,21 @@ header nav ul {
 
 .hero .hero-image img {
     border-radius: 50%;
-    width: 350px;
+    width: 300px;
     border: 1px solid var(--base-light);
 }
 
-/* Section 3: About */
+/* Section 3: About me */
 
 .bio-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
-    border: 1px solid var(--action);
+    padding: 20px;
+    /* border: 1px solid var(--action); */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .bio-text h2 {
@@ -302,6 +330,7 @@ header nav ul {
 
 .bio-text p {
     text-align: center;
+    padding: 10px;
 }
 
 .bio-text a {
@@ -322,10 +351,17 @@ header nav ul {
     background-color: var(--base-lightest);
 } 
 
+.bio-text a i {
+    padding: 5px;
+    align-self: center;
+}
+
 /* Section 4: My tech Skills */
 
 .skills-section {
-    padding: 0 20px;
+    
+    padding: 20px;
+    margin-top: 10px;
     margin-bottom: 10px;
     background-color: var(--brand);
     color: var(--base-lightest)
@@ -355,7 +391,7 @@ header nav ul {
     width: 200px;
     padding: 10px 20px;
     margin: 10px;
-    border: 1.5px solid var(--base-dark);
+    border: 2px solid var(--base-dark);
     border-radius: 5px;
 }
 
@@ -380,7 +416,7 @@ header nav ul {
     align-items: center;
     padding: 0 20px;
     margin-bottom: 10px;
-    border: 1px solid var(--action);
+    /* border: 1px solid var(--action); */
 }
 
 .project-section h2 {
@@ -392,22 +428,28 @@ header nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 10px;
-    border: 1px solid var(--action);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--action);
+    border-radius: 5px;
+    width: 50%;
 }
 
 .project-section .project-container {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    gap: 20px;
 }
 
 .project-section .project-container .calculator {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
-    border: 1px solid var(--action);
+    flex: 2;
+    border: 2px solid var(--action);
+    border-radius: 5px;
     padding: 5px;
     margin-right: 5px;
 }
@@ -416,8 +458,9 @@ header nav ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 1;
-    border: 1px solid var(--action);
+    flex: 2;
+    border: 2px solid var(--action);
+    border-radius: 5px;
     padding: 5px;
 }
     
@@ -444,6 +487,11 @@ header nav ul {
     font-size: 15px;
 }
 
+.project-section .project-text a i,
+.project-section .project-container a i {
+    padding: 5px;
+}
+
 .project-section .project-text .more-projects {
     padding: 5px;
     margin: 5px;
@@ -461,7 +509,7 @@ header nav ul {
 
 .project-section .project-container .icon {
     display: flex;
-    width: 200px;
+    width: 30%;
 }
 
 /* Section 6: Contact */
@@ -469,10 +517,10 @@ header nav ul {
 .contact-form {
     background-color: var(--brand);
     color: var(--base-lightest);
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    /* align-items: center;  */
     padding: 48px 16px;
 }
 
@@ -481,12 +529,16 @@ header nav ul {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact-form textarea {
     display: block;
     width: 100%;
     padding: 8px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
 }
 
 .contact-form label {
@@ -506,6 +558,7 @@ header nav ul {
     background-color: var(--action);
     border: 1px solid var(--base-lightest);
     cursor: pointer;
+    border-radius: 5px;
 }
 
 
@@ -514,7 +567,6 @@ header nav ul {
     header {
       display: flex;
       justify-content: space-between;
-      
     }
   
     details[open] #menu {
@@ -528,6 +580,11 @@ header nav ul {
       display: flex;
       gap: 24px;
       margin-right: 16px;
+    }
+
+    header .right {
+        display: flex;
+        flex-shrink: 1;
     }
     
     /* Section 1: Acknowledgement */
@@ -569,6 +626,12 @@ header nav ul {
     .project-section .project-container span {
         font-size: 16px;
     }
+    /* Section 6: Contact */
+
+    .contact-form {
+       align-items: center;
+}
+
 
   }
   
@@ -630,15 +693,19 @@ header nav ul {
    
  
 /* footer */
-
 footer {
+    margin-top: auto;
+}
+
+.footer {
     padding: 16px;
     display: flex;
+    margin-top: auto;
     justify-content: space-around;
     align-items: center;
 }
 
-footer span {
+.footer a span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -647,15 +714,27 @@ footer span {
     font-weight: 600;
 }
 
-footer a {
+.footer a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.socials-icon,
-.ally {
+.footer a .socials-icon,
+.footer a .ally {
     width: 100px;
     height: 100px;
+    display: flex;
+    flex-shrink: 2;
+}
+
+footer .copy-right {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    color: var(--text);
+    font-size: 14px;
+    font-weight: 400;
+    padding: 20px;
 }
