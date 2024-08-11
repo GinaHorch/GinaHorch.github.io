@@ -9,16 +9,15 @@
     --base-light: #E4E4F1;
     --base-mid: #AEAEC3;
     --base-dark: #1C1C35;
-    --base-darker: #151528
-    --base-darkest: #07070D;
-    --text: --black;
+    --base-darker: #151528;
+    --text: black;
 }
 /* CSS Reset */
 html {
     box-sizing: border-box;
     font-size: 16px;
     font-family: "Inter", sans-serif;
-    color: var(--black);
+    color: var(--text);
     scroll-behavior: smooth;
   }
  
@@ -93,10 +92,6 @@ html, body {
     background-color: var(--action-alt);
 }
 
-.base-darkest {
-    background-color: var(--base-darkest);
-}
-
 .base-darker {
     background-color: var(--base-darker);
 }
@@ -167,10 +162,11 @@ header {
     display: flex;
     justify-content: space-between;
     background-color: var(--brand);
-    color: var(--text);
+    color: var(--base-lightest);
     padding: 0 20px;
     margin: 0;
     overflow: hidden;
+    width: 100%;
 }
 
 .right .rainbow {
@@ -190,8 +186,8 @@ nav .right {
 }
 
 nav .left {
-    color: var(--text);
-    font-size: 20px;
+    color: var(--base-lightest);
+    font-size: 1.2rem;
     font-weight: 600;
     align-self: flex-start;
     margin-top: 5px;
@@ -215,11 +211,15 @@ details ul {
     list-style-type: none;
 }
 
-header nav ul {
+nav .left details ul {
     display: flex;
     gap: 24px;
     margin-right: 16px;
   }
+
+nav .left details ul li a {
+    color: var(--base-lightest);
+}
 
 /* Section 1: Acknowledgement */
 
@@ -234,7 +234,7 @@ header nav ul {
 }
 
 .acknowledgement h2 {
-    font-size: 30px;
+    font-size: 2.4rem;
 }
 
 .acknowledgement p {
@@ -272,7 +272,7 @@ header nav ul {
 }
 
 .hero .hero-text h1 {
-    font-size: 30px;
+    font-size: 2.986rem;
     text-align: center;
 }
 .hero .hero-text p {
@@ -282,15 +282,20 @@ header nav ul {
     margin-top: 15px;
 }
 
+.hero .hero-text .hero-links span {
+    color: var(--base-lightest);
+    font-size: 1rem;
+}
+
 .hero .hero-text .hero-links a {
     display: inline-block;
     padding: 5px 10px;
-    border: 2px solid var(--base-dark);
+    border: 2px solid var(--base-lightest);
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
     transition: .1s;
-    font-size: 15px;
+    
 }
 
 .hero .hero-text .hero-links a:hover {
@@ -326,7 +331,7 @@ header nav ul {
 }
 
 .bio-text h2 {
-    font-size: 30px;
+    font-size: 2.4rem;
     text-align: center;
 }
 
@@ -343,7 +348,7 @@ header nav ul {
     margin-right: 10px;
     margin-bottom: 10px;
     transition: .1s;
-    font-size: 15px;
+    font-size: 1rem;
     align-self: center;
     cursor: pointer;
 }
@@ -371,7 +376,7 @@ header nav ul {
 
 .skills-section h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 2.4rem;
 }
 
 .skills-section .text {
@@ -405,7 +410,7 @@ header nav ul {
 }
 
 .skills-section .cells .cell span {
-    font-size: 18px;
+    font-size: 1.2rem;
     padding: 5px;
 }
 
@@ -423,7 +428,7 @@ header nav ul {
 
 .project-section h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 2.4rem;
 }
 
 .project-section .project-text {
@@ -486,7 +491,7 @@ header nav ul {
     border: 2px solid var(--base-dark);
     border-radius: 5px;
     transition: .1s;
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .project-section .project-text a i,
@@ -522,8 +527,9 @@ header nav ul {
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    /* align-items: center;  */
+    margin: 0 auto;
     padding: 48px 16px;
+    max-width: 700px;
 }
 
 .contact-form input {
@@ -549,7 +555,7 @@ header nav ul {
 }
 
 .contact-form h2 {
-    font-size: 35px;
+    font-size: 2.4rem;
 }
 
 .contact-form form button {
@@ -574,7 +580,7 @@ header nav ul {
     details[open] #menu {
         display: flex;
         flex-direction: column;
-        font-size: 20px;
+        font-size: 1.2rem;
         font-weight: 400;
     }
 
@@ -591,11 +597,13 @@ header nav ul {
     
     /* Section 1: Acknowledgement */
     
-
+    .acknowledgement h2 {
+        font-size: 1.728rem;
+    }
     /* Section 2: Hero */
 
     .hero .hero-text h1 {
-        font-size: 25px;
+        font-size: 2.074rem;
     }
 
     .hero {
@@ -609,7 +617,7 @@ header nav ul {
     /* Section 3: About */
 
     .bio-text h2 {
-        font-size: 25px;
+        font-size: 1.728rem;
     }
     /* Section 4: My tech Skills */
 
@@ -618,23 +626,32 @@ header nav ul {
     }
 
     .skills-section .cells .cell span {
-        font-size: 16px;
+        font-size: 1rem;
     }
-
+    .skills-section h2 {
+        font-size: 1.728rem;
+    }
     /* Section 5: My tech projects */
     .project-section {
         padding: 0 15px;
     }
+
+    .project-text h2 {
+        font-size: 1.728rem;
+    }
+
     .project-section .project-container span {
-        font-size: 16px;
+        font-size: 1rem;
     }
     /* Section 6: Contact */
 
     .contact-form {
        align-items: center;
-}
+    }
 
-
+    .contact-form h2 {
+        font-size: 1.728rem;
+    }
   }
   
 
@@ -649,7 +666,7 @@ header nav ul {
     details[open] #menu {
         display: flex;
         flex-direction: column;
-        font-size: 15px;
+        font-size: 0.833rem;
         font-weight: 400;
     }
 
@@ -660,11 +677,13 @@ header nav ul {
     }
 
     /* Section 1: Acknowledgement */
-
+    .acknowledgement h2 {
+        font-size: 1.44rem;
+    }
 
      /* Section 2: Hero */
     .hero .hero-text h1 {
-        font-size: 20px;
+        font-size: 1.728rem;
     }
 
     .hero {
@@ -678,18 +697,34 @@ header nav ul {
     /* Section 3: About */
 
     .bio-text h2 {
-        font-size: 20px;
+        font-size: 1.44rem;
     }
     /* Section 4: My tech Skills */
     .skills-section {
         padding: 0;
     }
-    
+    .skills-section h2 {
+        font-size: 1.44rem;
+    }
+
     /* Section 5: My tech projects */
     .project-section {
     padding: 0;
     }
 
+    .project-text h2 {
+        font-size: 1.44rem;
+    }
+
+     /* Section 6: Contact */
+
+     .contact-form {
+        align-items: center;
+     }
+ 
+     .contact-form h2 {
+         font-size: 1.44rem;
+     }
   }
 
    
@@ -712,7 +747,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: var(--text);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -736,7 +771,7 @@ footer .copy-right {
     flex-shrink: 0;
     justify-content: center;
     color: var(--text);
-    font-size: 14px;
+    font-size: 0.694rem;
     font-weight: 400;
     padding: 20px;
 }
