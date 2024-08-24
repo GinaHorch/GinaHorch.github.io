@@ -149,6 +149,7 @@ html, body {
     overflow-y: scroll;
     max-width: 1500px;
     margin: 0 auto;
+    border: 1px solid var(--base-dark);
  }
 
  a {
@@ -732,6 +733,7 @@ nav .left details ul li a {
 /* footer */
 footer {
     margin-top: auto;
+    border: 1px solid var(--base-dark);
 }
 
 .footer {
@@ -764,6 +766,7 @@ footer {
     height: 100px;
     display: flex;
     flex-shrink: 2;
+    justify-content: space-evenly;
 }
 
 footer .copy-right {
