@@ -762,8 +762,8 @@ footer {
 
 .footer a .socials-icon,
 .footer a .ally {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: flex;
     flex-shrink: 2;
     justify-content: space-evenly;
@@ -777,4 +777,39 @@ footer .copy-right {
     font-size: 0.694rem;
     font-weight: 400;
     padding: 20px;
+}
+
+/* in about.html - resume section */
+.resume {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.resume a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.resume a img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-shrink: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
