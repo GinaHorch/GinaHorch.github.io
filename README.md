@@ -1,54 +1,59 @@
-#  Gina's - Portfolio Task - Done is better than perfect
+#  Gina's - Portfolio Task
 ​
 [My portfolio site](https://ginahorch.github.io/) 
 ​
 ## Project Requirements
 
 ### Content
- Add a short paragraph describing the features below. What aesthetic and technical choices did you make? 
+ The portfolio showcases various features designed with a focus on aesthetics and user experience. Below is a summary of each section and the choices made:
 - [X] At least one profile picture
-    The hero image is displayed using flex-box, with top and bottom margins, a set width, a contrasting border and border radius to make it as round as possible.
+    The profile picture is featured prominently in the hero section, styled using **flexbox** for alignment and responsiveness. I used top and bottom margins to center it vertically, a fixed width to maintain consistency across screen sizes, and a contrasting border to draw attention. The rounded appearance was achieved with a high border-radius value, ensuring a polished, approachable look that reflects a modern aesthetic.
 - [X] Biography (at least 100 words)
-    Very brief bio in the About section of the home page with a link for more details to the about.html.
+    The About section includes a concise biography to give visitors a brief introduction. For more in-depth information, users can navigate to the about.html page. I structured the content using clear headings and paragraphs to improve readability and used CSS for consistent spacing and layout.
 - [X] Functional Contact Form
-    Screenshot of successful form submission attached.
+    A fully functional contact form is available for users to reach out directly from the site. The form includes validation for required fields, ensuring only correctly formatted submissions. I have attached a screenshot showing a successful form submission. Future enhancements may include adding a CAPTCHA or reCAPTCHA to improve security and prevent spam.
 - [X] "Projects" section
-    Two example projects on the Homepage and a link to more projects in the projects.html.
+    The homepage features two highlighted projects with descriptions and images, providing a glimpse into my work. A projects.html page allows users to view additional projects, encouraging further exploration. I aimed to make the project layout visually engaging by using **flexbox** for consistent spacing and responsive design.
 - [X] Links to external sites, e.g. GitHub and LinkedIn.
-    Included links to socials (GitHub and LinkedIn) as well as other websites - used blank to open links in a separate page.
+    To provide easy access to my professional network and external contributions, I included links to GitHub, LinkedIn, and other relevant sites. Links open in new tabs (target="blank") allowing users to remain on the portfolio while exploring external content.
 - [X] Acknowledgement
-    I added an acknowledgement section to the beginning of the homepage.
+    I added an acknowledgement section at the beginning of the homepage to provide a moment for reflection for the user before they dive into the rest of the site.
 ​
 ### Technical
- Add a short paragraph describing the features below. What strategies or design decisions did you work from? 
+ Below is a summary of the technical features of the portfolio site and the design decisions made:
 - [X] At least 2 web pages.
-    Links to about.html and projects.html.
-    Internal links to About me, My skills, My tech projects and Get in touch.
+    The site includes multiple pages: index.html (Home), about.html, and projects.html. Internal navigation links are provided to the sections like 'About me', 'My skills', 'My tech projects' and 'Get in touch', ensuring smooth user experience.
 - [X] Version controlled with Git
-    Used development branch, frequent commits and final push.
+    All project development was version-controlled using Git. I worked primarily on a dedicated development branch, with frequent commits to track progress. The final version was pushed to the main branch for deployment.
 - [X] Deployed on GitHub pages.
-    https://ginahorch.github.io/
+    The project was successfully deployed on GitHub pages at: https://ginahorch.github.io/ GitHub Pages was chosen due to its ease of use for hosting static sites and its integration with Git repositories.
 - [X] Implements responsive design principles.
-    Deployed for some; however, I ran out of time and will continue working on it.
+    The site currently incorporates some responsive design elements using media queries, allowing for basic scaling across different screen sizes. All images and media are responsive by using max-width: 100% to prevent overflow and maintain aspect ratios. The site adopts a mobile-first approach, with a design optimised for small screens and progressively enhanced for larger screens. Fluid Grids are used, meaning relative units, such as percentages and rem, to ensure flexible design that scales smoothly across devices. Breakpoints by using media queries ensure seamless user experience on desktops, tablets, and mobile devices. For further optimisation, images have been compressed and CSS and JavaScript files minimised to improve load times on mobile devices.
 - [X] Uses semantic HTML.
-    Yes, used header, article, form, main, nav, section and footer.
+    Semantic HTML tags such as :<header>, <article>, <form>, <main>, <nav>, <section> and <footer>: were used throughout the project. These tags enhance accessibility and ensure the website adheres to best practices in HTML structure.
 
 ### Bonus (optional)
- Add a short paragraph describing the features below, if you included any. 
+ In additional to the required feartures, I aimed to include advanced styling and interactions to improve user experience. Below is a summary of the extra features and what I plan to include in the future. 
 - [X] Different styles for active, hover and focus states.
-    I added hover; however, the colour choices are not great, I need to keep working on this.
-- [ ] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
-    Not yet.
+    I implemented custom styles for hover and focus states, adding visual feedback when users interact with links, buttons, and other interactive elements. For example:
+    **Hover effects:** Subtle colour transitions and transformations were applied to buttons and links to enhance the interactive feel. I used CSS transitions to ensure smooth animations.
+    **Focus states:** Custom focus outlines were designed to ensure accessibility for keyboard users, improving navigation for people with disabilities. Colour choices and contrasts have been refined to meet WCAG accessibility standards.
+- [X] Include JavaScript to add some dynamic elements to your site. (Extra tricky!)
+    To further enhance the portfolio, I implemented JavaScript-driven dynamic elements:
+    **Interactive Modals:** I added interactive modals for project previews, allowing users to click on a project and view additional information without leaving the page.
+    **Scroll-triggered animations:** I used libraries like **ScrollReveal.js** to animate elements into view as users scroll down the page, adding a touch of modern flair and engagement.
+    **Smooth scrolling and lazy loading:** I implemented smooth scrolling for anchor links and lazy loading for images to improve performance, especially for mobile devices.
+    These enhancements make the site more engaging and align with the expectations of modern web users, showcasing advanced frontend development skills. 
 ​
 ### Screenshots
 > Please include the following:
 > - The different pages and features of your website on mobile, tablet and desktop screen sizes (multiple screenshots per page and screen size).
     
 > - The different features of your site, e.g. if you have hover states, take a screenshot that shows that.  
-     I ran out of time to figure out how to take screenshots of hovering features and I ran out of time to add responsiveness to lots of areas.
+     
 > You can do this by saving the images in a folder in your repo, and including them in your readme document with the following Markdown code: 
 
-My apologies, I did run out of time. I will continue working on it.
+The screenshots reflect my skills straight after completing the HTML and CSS component of SheCodesPlus.
 
 ####  screenshot-home-page-desktop 
 ![Image of the home page, desktop screen size](./GinaHorch.github.io/screen-shots/screenshot-home-page-desktop.png)
