@@ -30,7 +30,7 @@
 - [X] Implements responsive design principles.
     The site currently incorporates some responsive design elements using media queries, allowing for basic scaling across different screen sizes. All images and media are responsive by using max-width: 100% to prevent overflow and maintain aspect ratios. The site adopts a mobile-first approach, with a design optimised for small screens and progressively enhanced for larger screens. Fluid Grids are used, meaning relative units, such as percentages and rem, to ensure flexible design that scales smoothly across devices. Breakpoints by using media queries ensure seamless user experience on desktops, tablets, and mobile devices. For further optimisation, images have been compressed and CSS and JavaScript files minimised to improve load times on mobile devices.
 - [X] Uses semantic HTML.
-    Semantic HTML tags such as :<header>, <article>, <form>, <main>, <nav>, <section> and <footer>: were used throughout the project. These tags enhance accessibility and ensure the website adheres to best practices in HTML structure.
+    Semantic HTML tags such as `<header>`, `<article>`, `<form>`, `<main>`, `<nav>`, `<section>` and `<footer>` were used throughout the project. These tags enhance accessibility and ensure the website adheres to best practices in HTML structure.
 
 ### Bonus (optional)
  In additional to the required feartures, I aimed to include advanced styling and interactions to improve user experience. Below is a summary of the extra features and what I plan to include in the future. 
