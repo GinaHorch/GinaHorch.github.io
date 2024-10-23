@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="icon" type="image/png" href="./img/logo-header.webp">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="Gina's portfolio showcasing web development projects, tech skills, and a contact form.">
+    <link rel="icon" type="image/webp" href="./img/logo-header.webp">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/script.min.js">
+    <script src="dist/script.min.js"></script>
 
     <title>Gina's Portfolio</title>
 </head>
@@ -22,14 +21,15 @@
         <nav>
             <div class="left">
                 <details>
-                    <summary>
-                        <div class="burger-icon"><svg aria-label="Navigation Menu" 
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 4h24M0 12h24M0 20h24" stroke="white" stroke-width="4" />
-                          </svg></div>
+                    <summary aria-label="Toggle navigation menu" aria-expanded="false">
+                        <div class="burger-icon">
+                            <svg aria-label="Navigation Menu" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 4h24M0 12h24M0 20h24" stroke="white" stroke-width="4" />
+                            </svg>
+                        </div>
                     </summary>
                     <ul id="menu">
-                        <li><a href="/GinaHorch.github.io/">Home</a></li>
+                        <li><a href="/">Home</a></li>
                         <li><a href="./about.html">About</a></li>
                         <li><a href="#skills">My skills</a></li>   
                         <li><a href="./projects.html">My projects</a></li>
@@ -38,7 +38,7 @@
                 </details>    
         </nav> 
             <div class="right">
-                <img class="rainbow" src="./img/rainbow-flag.webp" alt="Rainbow Flag" width="100px" />
+                <img class="rainbow" src="./img/rainbow-flag.webp" alt="Pride flag supporting LGBTQIA+ community" width="100px" loading="lazy"/>
             </div>
     </header>
 
@@ -54,9 +54,17 @@
                 I respectfully acknowledge the Whadjuk and Mooro people of the Noongar nation upon whose unceded land I live and where created this website. 
                 I pay my respect to all Elders both past and present and emerging leaders.</p>
             <div class="flags">
-                <img src="./img/aboriginal_flag.webp" alt="Aboriginal Flag" width="100px" />
-                <img src="./img/TorresStraitIslander-flag.webp" alt="Torres Strait Islander Flag" width="100px" />
+                <img src="./img/aboriginal_flag.webp" alt="Aboriginal Flag" width="100px" loading="lazy"/>
+                <img src="./img/TorresStraitIslander-flag.webp" alt="Torres Strait Islander Flag" width="100px" loading="lazy"/>
             </div>
+                <a href="https://pages.evolves.com.au/pledge" title="AllyPledge" target="_blank" rel="noopener no-referrer">
+                    <img class="ally" 
+                    src="img/ally-pledge.webp" 
+                    alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
+                    width="200px"
+                    loading="lazy"/>
+                    <span>Take the ally pledge</span>
+                </a>
         </section>
 
         <!-- Section 2: Hero -->
@@ -88,7 +96,8 @@
             <div class="hero-image">
             <img
                 src="./img/head-shot.webp"
-                alt="Gina's headshot with SheCodesAustralia banner in the background."
+                alt="Gina's headshot with the purple SheCodes Australia banner in the background."
+                loading="lazy"
             />
             </div>
         </section>
@@ -112,32 +121,36 @@
         <!-- Section 4: My tech skills -->
         <section id="skills" class="skills-section">
             <h2>My tech skills</h2>
-            <div class="text">
-                Thanks to The Odin Project's Foundations Course, I learned basic HTML, CSS and JavaScript skills. 
-                As a lucky recipient of a She Codes Plus scholarship by Canva, I am now in the process of supercharging my tech skills.
-            </div>
+                <div class="text">
+                    Thanks to The Odin Project's Foundations Course, I learned basic HTML, CSS and JavaScript skills. 
+                    As a lucky recipient of a She Codes Plus scholarship by Canva, I am now in the process of supercharging my tech skills.
+                </div>
             <article class="cells">
                 <div class="cell">
                     <img src="./img/html-logo.webp"
-                    alt="HTML logo">
+                    alt="HTML logo - the foundation of web structure"
+                    loading="lazy"/>
                     <span>HTML</span>
                 </div>
 
                 <div class="cell">
                     <img src="./img/css-logo.webp"
-                    alt="CSS logo">
+                    alt="CSS logo"
+                    loading="lazy"/>
                     <span>CSS</span>
                 </div>
 
                 <div class="cell">
                     <img src="./img/javascript-logo.webp"
-                    alt="JavaScript logo">
+                    alt="JavaScript logo"
+                    loading="lazy"/>
                     <span>JavaScript</span>
                 </div>
 
                 <div class="cell">
                     <img src="./img/python-logo.webp"
-                    alt="Python logo">
+                    alt="Python logo"
+                    loading="lazy"/>
                     <span>Python</span>
                 </div>
             </article>
@@ -178,72 +191,64 @@
                     <span>See for yourself</span>
                     </a>
                 </article>
-        </div>
-    </section>      
+            </div>
+        </section>      
 
         <!-- Section 6: Contact -->
-   <section id="contact" class="contact-form">
-        <h2>Get in touch</h2>
-        <form action="https://formspree.io/f/xanwovlb" method="post">
+        <section id="contact" class="contact-form">
+            <h2>Get in touch</h2>
+                <form action="https://formspree.io/f/xanwovlb" method="post">
+                    <div class="form-group">
+                        <label for="your-name">Your Name</label>
+                        <input type="text" id="your-name" name="your-name" required>
+                    </div>
 
-            <div class="form-group">
-                <label for="your-name">Your Name</label>
-                <input type="text" id="your-name">
-            </div>
+                    <div class="form-group">
+                        <label for="your-organisation">Your Organisation</label>
+                        <input type="text" id="your-organisation" name="your-organisation">
+                    </div>
 
-            <div class="form-group">
-                <label for="your-organisation">Your Organisation</label>
-                <input type="text" id="your-organisation">
-            </div>
+                    <div class="form-group">
+                        <label for="your-email">Your Email</label>
+                        <input type="email" id="your-email" name="your-email" required>
+                    </div>
 
-            <div class="form-group">
-                <label for="your-email">Your Email</label>
-                <input type="text" id="your-email">
-            </div>
-
-            <div class="form-group">
-                <label for="message">Your Message</label>
-                <textarea name="message" id="message" rows="10"></textarea>
-            </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" rows="10" required></textarea>
+                    </div>
 
                 <!-- <input type="submit" value="Submit"> -->
             
-            <button type="submit">Send</button>
-        </form>
-   </section>
+                    <button type="submit">Send</button>
+                </form>
+        </section>
 
-</main>
+    </main>
 
-   <footer>
-      <div class="footer">
-        <a href="https://pages.evolves.com.au/pledge" title="AllyPledge" target="_blank" rel="noopener no-referrer">
-            <img class="ally" 
-                src="img/ally-pledge.webp" 
-                alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
-                width="200px"
-            />
-            <span>Take the pledge</span>
-        </a>
-
-        <a href="https://www.linkedin.com/in/gina-horch" title="LinkedIn" target="_blank" rel="noopener no-referrer">
-            <img class="socials-icon" 
-                 src="./img/linkedin_logo.webp"
-                 alt="The LinkedIn logo: a blue square with the white letter IN in the centre" 
-                 width="100px"
-            />
-            <span>Gina's LinkedIn</span>
-        </a>
+    <footer>
+        <div class="footer">        
+        <address>
+            <a href="https://www.linkedin.com/in/gina-horch" title="LinkedIn" target="_blank" rel="noopener no-referrer">
+                <img class="socials-icon" 
+                src="./img/linkedin_logo.webp"
+                alt="The LinkedIn logo: a blue square with the white letter IN in the centre" 
+                width="100px"
+                loading="lazy"/>
+                <span>Gina's LinkedIn</span>
+            </a>
         
-        <a href="https://github.com/GinaHorch" title="GitHub" target="_blank" rel="noopener no-referrer">
-            <img class="socials-icon" 
-                 src="./img/github.svg"
-                 alt="The GitHub logo: a black circle with the silhouette of a white cat, with one tentacle arm" 
-                 width="100px"
-            />
-            <span>Gina's GitHub</span>
-        </a>
-      </div> 
-      <div class="copy-right">Copyright @ Social Insight Solutions 2024</div>
-   </footer>
+            <a href="https://github.com/GinaHorch" title="GitHub" target="_blank" rel="noopener no-referrer">
+                <img class="socials-icon" 
+                src="./img/github.svg"
+                alt="The GitHub logo: a black circle with the silhouette of a white cat, with one tentacle arm" 
+                width="100px"
+                loading="lazy"/>
+                <span>Gina's GitHub</span>
+            </a>
+        </div> 
+        </address>
+        <small>&copy; 2024 Social Insight Solutions</small>
+    </footer>
 </body>
 </html>

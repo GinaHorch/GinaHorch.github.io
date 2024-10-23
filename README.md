@@ -56,28 +56,28 @@
 The screenshots reflect my skills straight after completing the HTML and CSS component of SheCodesPlus.
 
 ####  screenshot-home-page-desktop 
-![Image of the home page, desktop screen size](./GinaHorch.github.io/screen-shots/screenshot-home-page-desktop.png)
+![Image of the home page, desktop screen size](/screen-shots/screenshot-home-page-desktop.png)
 
 ####  screenshot-home-page-hamburger-menu 
-![Image of the home page, desktop screen size, open hamburger menu](./GinaHorch.github.io/screen-shots/screenshot-home-page-hamburger-menu.png)
+![Image of the home page, desktop screen size, open hamburger menu](/screen-shots/screenshot-home-page-hamburger-menu.png)
 
 ####  screenshot-home-page-450px1
-![Image of the home page, mobile device, first part including header](./GinaHorch.github.io/screen-shots/screenshot-home-page450px1.png)
+![Image of the home page, mobile device, first part including header](/screen-shots/screenshot-home-page450px1.png)
 
 ####  screenshot-home-page-450px2
-![Image of the home page, mobile device, second part including skills](./GinaHorch.github.io/screen-shots/screenshot-home-page450px2.png)
+![Image of the home page, mobile device, second part including skills](/screen-shots/screenshot-home-page450px2.png)
 
 ####  screenshot-home-page-450px3
-![Image of the home page, mobile device, third part including footer](./GinaHorch.github.io/screen-shots/screenshot-home-page450px3.png)
+![Image of the home page, mobile device, third part including footer](/screen-shots/screenshot-home-page450px3.png)
 
 ####  screenshot-home-page-700px1
-![Image of the home page, tablet device, first part including header](./GinaHorch.github.io/screen-shots/screenshot-home-page700px1.png)
+![Image of the home page, tablet device, first part including header](/screen-shots/screenshot-home-page700px1.png)
 
 ####  screenshot-home-page-700px2
-![Image of the home page, tablet device, first part including skills](./GinaHorch.github.io/screen-shots/screenshot-home-page700px2.png)
+![Image of the home page, tablet device, first part including skills](/screen-shots/screenshot-home-page700px2.png)
 
 ####  screenshot-home-page-700px3
-![Image of the home page, tablet device, first part including footer](./GinaHorch.github.io/screen-shots/screenshot-home-page700px3.png)
+![Image of the home page, tablet device, first part including footer](/screen-shots/screenshot-home-page700px3.png)
 
 ####  screenshot-form-submission
-![Image of the successful form submission](./GinaHorch.github.io/screen-shots/screenshot-form-submission.png)
+![Image of the successful form submission](/screen-shots/screenshot-form-submission.png)

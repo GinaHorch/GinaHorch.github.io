@@ -1,0 +1,849 @@
+/* global colours */
+:root {
+    --brand: #4141C7;
+    --brand-alt: #3434AD;
+    --action: #4B4B83;
+    --action-alt: #3C3C68;
+    --base-lightest: #FDFDFE;
+    --base-lighter: #F1F1F8;
+    --base-light: #E4E4F1;
+    --base-mid: #AEAEC3;
+    --base-dark: #1C1C35;
+    --base-darker: #151528;
+    --text: black;
+}
+/* CSS Reset */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    scroll-behavior: smooth;
+  }
+ 
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+ 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Rubik", sans-serif;
+  }
+ 
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  ol,
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  ol,
+  ul {
+    list-style: none;
+  }
+ 
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+ 
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit;
+  }
+/* Load Poppins Regular (400 weight) */
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-v21-latin-regular.woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Load Poppins Regular italic */
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-v21-latin-italic.woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Load Poppins Bold (600 weight) */
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-v21-latin-600.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Load Poppins Bold italic */
+@font-face {
+    font-family: 'Poppins';
+    src: url('./assets/fonts/poppins-v21-latin-600italic.woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+/* default font style */
+html, body {
+    font-family: "Poppins", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* colour styles */
+.brand {
+    background-color: var(--brand);
+}
+
+.brand-alt {
+    background-color: var(--brand-alt);
+}
+
+.action {
+    background-color: var(--action);
+}
+
+.action-alt {
+    background-color: var(--action-alt);
+}
+
+.base-darker {
+    background-color: var(--base-darker);
+}
+
+.base-dark {
+    background-color: var(--base-dark);
+}
+
+.base-mid {
+    background-color: var(--base-mid);
+}
+
+.base-light {
+    background-color: var(--base-light);
+}
+
+.base-lighter {
+    background-color: var(--base-lighter);
+}
+
+.base-lightest {
+    background-color: var(--base-lightest);
+}
+
+/* Utilities */
+.display-none {
+    display: none;
+ }
+
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ }
+
+ html, body {
+    padding: 0;
+    margin: 0;
+ }
+
+ html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+ }
+
+ body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--base-lightest);
+    font-weight: 400;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-width: 1500px;
+    margin: 0 auto;
+    border: 1px solid var(--base-dark);
+ }
+
+ h1, h2, h3 {
+    font-weight: 600;
+ }
+
+ a {
+    color: var(--text);
+    text-decoration: none;
+ }
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--brand);
+    color: var(--base-lightest);
+    padding: 0 20px;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+.right .rainbow {
+    display: flex;
+    width: 70px;
+    height: 50px;  
+    object-fit: contain;  
+    border: 1px solid var(--base-dark);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Navbar */ 
+
+nav .right {
+    display: flex;
+}
+
+nav .left {
+    color: var(--base-lightest);
+    font-size: 1.2rem;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-top: 5px;
+    
+}
+
+details .burger-icon {
+    transition: transform 0.1s;
+    width: 24px;
+    height: 24px;
+    padding: 2px;
+}
+
+details[open] .burger-icon {
+    transform: rotate(90deg);
+}
+  
+summary, 
+details ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav .left details ul {
+    display: flex;
+    gap: 24px;
+    margin-right: 16px;
+  }
+
+nav .left details ul li a {
+    color: var(--base-lightest);
+}
+
+/* Section 1: Acknowledgement */
+
+.acknowledgement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.acknowledgement h2 {
+    font-size: 2.4rem;
+}
+
+.acknowledgement p {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.acknowledgement .flags {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 70px;
+    height: 50px;  
+    object-fit: contain;  
+    padding: 5px;
+    gap: 10px;
+}
+/* Section 2: Hero */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 20px;
+    background-color: var(--brand);
+    color: var(--base-lightest);
+}
+    
+.hero .hero-text {
+    flex: 8;
+    text-align: center;
+}
+
+.hero .hero-text h1 {
+    font-size: 2.986rem;
+    text-align: center;
+}
+.hero .hero-text p {
+    margin-top: 5px;
+}
+.hero .hero-text .hero-links {
+    margin-top: 15px;
+}
+
+.hero .hero-text .hero-links span {
+    color: var(--base-lightest);
+    font-size: 1rem;
+}
+
+.hero .hero-text .hero-links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--base-lightest);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+    
+}
+
+.hero .hero-text .hero-links a:hover {
+    color: var(--action);
+    background-color: var(--base-mid);
+    cursor: pointer;
+} 
+
+.hero .hero-image {
+    display: flex;
+    justify-content: right;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.hero .hero-image img {
+    border-radius: 50%;
+    width: 300px;
+    border: 1px solid var(--base-light);
+}
+
+/* Section 3: About me */
+
+.bio-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* border: 1px solid var(--action); */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.bio-text h2 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+.bio-text p {
+    text-align: center;
+    padding: 10px;
+}
+
+.bio-text a {
+    display: flex;
+    padding: 5px 10px;
+    border: 2px solid var(--action);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+    font-size: 1rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+.bio-text a:hover {
+    color: var(--action);
+    background-color: var(--base-lightest);
+} 
+
+.bio-text a i {
+    padding: 5px;
+    align-self: center;
+}
+
+/* Section 4: My tech Skills */
+
+.skills-section {
+    
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: var(--brand);
+    color: var(--base-lightest)
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.skills-section .text {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.skills-section .cells {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skills-section .cells .cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: 2px solid var(--base-dark);
+    border-radius: 5px;
+}
+
+.skills-section .cells .cell img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    border-radius: 2px;
+}
+
+.skills-section .cells .cell span {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+/* Section 5: My tech projects */
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    /* border: 1px solid var(--action); */
+}
+
+.project-section h2 {
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.project-section .project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--action);
+    border-radius: 5px;
+    width: 50%;
+}
+
+.project-section .project-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+    gap: 20px;
+}
+
+.project-section .project-container .calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    border: 2px solid var(--action);
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.project-section .project-container .recipes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    border: 2px solid var(--action);
+    border-radius: 5px;
+    padding: 5px;
+}
+    
+.project-section .project-text p,
+.project-section .project-container p,
+.project-section .more-projects p {
+    text-align: center;
+    padding: 5px;;
+}
+
+.project-section .project-container span {
+    text-align: center;
+    margin-left: 5px;
+}
+
+.project-section .project-text a,
+.project-section .project-container a {
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+    border: 2px solid var(--base-dark);
+    border-radius: 5px;
+    transition: .1s;
+    font-size: 1rem;
+}
+
+.project-section .project-text a i,
+.project-section .project-container a i {
+    padding: 5px;
+}
+
+.project-section .project-text .more-projects {
+    padding: 5px;
+    margin: 5px;
+}
+
+.project-section .project-text a:hover {
+    color: var(--action);
+    background-color: var(--base-mid);
+}
+
+.project-section .project-container a:hover {
+    color: var(--action);
+    background-color: var(--base-mid);
+}
+
+.project-section .project-container .icon {
+    display: flex;
+    width: 30%;
+}
+
+/* Section 6: Contact */
+
+.contact-form {
+    background-color: var(--brand);
+    color: var(--base-lightest);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    margin: 0 auto;
+    padding: 48px 16px;
+    max-width: 700px;
+}
+
+.contact-form input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contact-form label {
+    display: block;
+    width: 100%;
+}
+
+.contact-form h2 {
+    font-size: 2.4rem;
+}
+
+.contact-form form button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-top: 16px;
+    background-color: var(--action);
+    border: 1px solid var(--base-lightest);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 720px) {
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    details[open] #menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    header nav ul {
+      display: flex;
+      gap: 24px;
+      margin-right: 16px;
+    }
+
+    header .right {
+        display: flex;
+        flex-shrink: 1;
+    }
+    
+    /* Section 1: Acknowledgement */
+    
+    .acknowledgement h2 {
+        font-size: 1.728rem;
+    }
+    /* Section 2: Hero */
+
+    .hero .hero-text h1 {
+        font-size: 2.074rem;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+    }
+
+    .hero .hero-image img {
+        width: 250px;
+    }
+
+    /* Section 3: About */
+
+    .bio-text h2 {
+        font-size: 1.728rem;
+    }
+    /* Section 4: My tech Skills */
+
+    .skills-section {
+        padding: 0 15px;
+    }
+
+    .skills-section .cells .cell span {
+        font-size: 1rem;
+    }
+    .skills-section h2 {
+        font-size: 1.728rem;
+    }
+    /* Section 5: My tech projects */
+    .project-section {
+        padding: 0 15px;
+    }
+
+    .project-text h2 {
+        font-size: 1.728rem;
+    }
+
+    .project-section .project-container span {
+        font-size: 1rem;
+    }
+    /* Section 6: Contact */
+
+    .contact-form {
+       align-items: center;
+    }
+
+    .contact-form h2 {
+        font-size: 1.728rem;
+    }
+  }
+  
+
+
+@media (max-width: 480px) {
+    
+    /* Header */
+    header {
+        padding: 0 10px;
+    }
+
+    details[open] #menu {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.833rem;
+        font-weight: 400;
+    }
+
+    .flags {
+        padding: 0 2px;
+        /* need to make flags go smaller */
+        
+    }
+
+    /* Section 1: Acknowledgement */
+    .acknowledgement h2 {
+        font-size: 1.44rem;
+    }
+
+     /* Section 2: Hero */
+    .hero .hero-text h1 {
+        font-size: 1.728rem;
+    }
+
+    .hero {
+        padding: 0
+    }
+
+    .hero .hero-image img {
+        width: 200px;
+    }
+
+    /* Section 3: About */
+
+    .bio-text h2 {
+        font-size: 1.44rem;
+    }
+    /* Section 4: My tech Skills */
+    .skills-section {
+        padding: 0;
+    }
+    .skills-section h2 {
+        font-size: 1.44rem;
+    }
+
+    /* Section 5: My tech projects */
+    .project-section {
+    padding: 0;
+    }
+
+    .project-text h2 {
+        font-size: 1.44rem;
+    }
+
+     /* Section 6: Contact */
+
+     .contact-form {
+        align-items: center;
+     }
+ 
+     .contact-form h2 {
+         font-size: 1.44rem;
+     }
+  }
+
+   
+ 
+/* footer */
+footer {
+    margin-top: auto;
+    border: 1px solid var(--base-dark);
+}
+
+.footer {
+    padding: 16px;
+    display: flex;
+    margin-top: auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footer a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a .socials-icon,
+.footer a .ally {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-shrink: 2;
+    justify-content: space-evenly;
+}
+
+footer .copy-right {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    color: var(--text);
+    font-size: 0.694rem;
+    font-weight: 400;
+    padding: 20px;
+}
+
+/* in about.html - resume section */
+.resume {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.resume a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resume a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.resume a img {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-shrink: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
