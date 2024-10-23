@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Gina's portfolio showcasing web development projects, tech skills, and a contact form.">
-    <link rel="icon" type="image/webp" href="./img/logo-header.webp">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@400;600&display=swap" rel="stylesheet">
+    <base href="https://ginahorch.github.io/">
+    <link rel="icon" type="image/webp" href="./assets/img/logo-header.webp">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
             integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
             crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="dist/script.min.js">
-    <script src="dist/script.min.js"></script>
-
+    <link rel="preload" href="./assets/fonts/poppins-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/style.min.css">
+    <script src="dist/script.min.js" defer></script>
     <title>Gina's Portfolio</title>
 </head>
 
@@ -38,7 +38,7 @@
                 </details>    
         </nav> 
             <div class="right">
-                <img class="rainbow" src="./img/rainbow-flag.webp" alt="Pride flag supporting LGBTQIA+ community" width="100px" loading="lazy"/>
+                <img class="rainbow" src="./assets/img/rainbow-flag.webp" alt="Pride flag supporting LGBTQIA+ community" width="100px" loading="lazy"/>
             </div>
     </header>
 
@@ -46,28 +46,7 @@
         <!-- Side bar -->
         
 
-        <!-- Section 1: Acknowledgement -->
-        <section class="acknowledgement">
-            <h2>Acknowledgement</h2>
-            <p>As a non-Aboriginal woman of German heritage I wish to acknowledge and pay respects to the Traditional Custodians of the lands, waters and skies throughout Australia
-                and recognise their continuing connection to culture and communities. 
-                I respectfully acknowledge the Whadjuk and Mooro people of the Noongar nation upon whose unceded land I live and where created this website. 
-                I pay my respect to all Elders both past and present and emerging leaders.</p>
-            <div class="flags">
-                <img src="./img/aboriginal_flag.webp" alt="Aboriginal Flag" width="100px" loading="lazy"/>
-                <img src="./img/TorresStraitIslander-flag.webp" alt="Torres Strait Islander Flag" width="100px" loading="lazy"/>
-            </div>
-                <a href="https://pages.evolves.com.au/pledge" title="AllyPledge" target="_blank" rel="noopener no-referrer">
-                    <img class="ally" 
-                    src="img/ally-pledge.webp" 
-                    alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
-                    width="200px"
-                    loading="lazy"/>
-                    <span>Take the ally pledge</span>
-                </a>
-        </section>
-
-        <!-- Section 2: Hero -->
+        <!-- Section 1: Hero -->
         <section class="hero">
         <!-- use div for flex container -->
             <div class="hero-text">
@@ -93,13 +72,35 @@
                     </a>
                 </div>
             </div>
+            
             <div class="hero-image">
-            <img
-                src="./img/head-shot.webp"
-                alt="Gina's headshot with the purple SheCodes Australia banner in the background."
-                loading="lazy"
-            />
+                <img
+                    src="./assets/img/head-shot.webp"
+                    alt="Gina's headshot with the purple SheCodes Australia banner in the background."
+                    loading="lazy"
+                />
             </div>
+        </section>
+
+         <!-- Section 2: Acknowledgement -->
+         <section class="acknowledgement">
+            <h2>Acknowledgement</h2>
+            <p>As a non-Aboriginal woman of German heritage I wish to acknowledge and pay respects to the Traditional Custodians of the lands, waters and skies throughout Australia
+                and recognise their continuing connection to culture and communities. 
+                I respectfully acknowledge the Whadjuk and Mooro people of the Noongar nation upon whose unceded land I live and where created this website. 
+                I pay my respect to all Elders both past and present and emerging leaders.</p>
+            <div class="flags">
+                <img src="./assets/img/aboriginal_flag.webp" alt="Aboriginal Flag" width="100px" loading="lazy"/>
+                <img src="./assets/img/TorresStraitIslander-flag.webp" alt="Torres Strait Islander Flag" width="100px" loading="lazy"/>
+            </div>
+                <a href="https://pages.evolves.com.au/pledge" title="AllyPledge" target="_blank" rel="noopener no-referrer">
+                    <img class="ally" 
+                    src="./assets/img/ally-pledge.webp" 
+                    alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
+                    width="200px"
+                    loading="lazy"/>
+                    <span>Take the ally pledge</span>
+                </a>
         </section>
 
         <!-- Section 3: About me -->
@@ -127,28 +128,28 @@
                 </div>
             <article class="cells">
                 <div class="cell">
-                    <img src="./img/html-logo.webp"
+                    <img src="./assets/img/html-logo.webp"
                     alt="HTML logo - the foundation of web structure"
                     loading="lazy"/>
                     <span>HTML</span>
                 </div>
 
                 <div class="cell">
-                    <img src="./img/css-logo.webp"
+                    <img src="./assets/img/css-logo.webp"
                     alt="CSS logo"
                     loading="lazy"/>
                     <span>CSS</span>
                 </div>
 
                 <div class="cell">
-                    <img src="./img/javascript-logo.webp"
+                    <img src="./assets/img/javascript-logo.webp"
                     alt="JavaScript logo"
                     loading="lazy"/>
                     <span>JavaScript</span>
                 </div>
 
                 <div class="cell">
-                    <img src="./img/python-logo.webp"
+                    <img src="./assets/img/python-logo.webp"
                     alt="Python logo"
                     loading="lazy"/>
                     <span>Python</span>
@@ -170,7 +171,7 @@
             <div class="project-container"> 
                 <article class="calculator">
                     <img class="icon" 
-                    src="./img/odin-calculator.webp"
+                    src="./assets/img/odin-calculator.webp"
                     alt="Logo of the Odin Project: Calculator" />
                 
                 <p>As final project of The Odin Project Foundations Course, I created an on-screen calculator using HTML, CSS, and JavaScript.</p>
@@ -182,7 +183,7 @@
 
                 <article class="recipes">
                     <img class="icon" 
-                    src="./img/odin-recipes.webp"
+                    src="./assets/img/odin-recipes.webp"
                     alt="Logo of the Odin Project recipes project" />
            
                 <p>As part of The Odin Project Foundations Course, I built a basic recipe website practising with HTML.</p>
@@ -197,10 +198,10 @@
         <!-- Section 6: Contact -->
         <section id="contact" class="contact-form">
             <h2>Get in touch</h2>
-                <form action="https://formspree.io/f/xanwovlb" method="post">
+                <form action="https://formspree.io/f/xanwovlb" method="post" lang="en">
                     <div class="form-group">
                         <label for="your-name">Your Name</label>
-                        <input type="text" id="your-name" name="your-name" required>
+                        <input type="text" id="your-name" name="your-name" autocomplete="name" required>
                     </div>
 
                     <div class="form-group">
@@ -210,7 +211,7 @@
 
                     <div class="form-group">
                         <label for="your-email">Your Email</label>
-                        <input type="email" id="your-email" name="your-email" required>
+                        <input type="email" id="your-email" name="your-email" autocomplete="email" required>
                     </div>
 
                     <div class="form-group">
@@ -227,27 +228,27 @@
     </main>
 
     <footer>
-        <div class="footer">        
+      <section class="footer">        
         <address>
-            <a href="https://www.linkedin.com/in/gina-horch" title="LinkedIn" target="_blank" rel="noopener no-referrer">
+            <a href="https://www.linkedin.com/in/gina-horch" aria-label="Visit Gina's LinkedIn profile" title="LinkedIn" target="_blank" rel="noopener no-referrer">
                 <img class="socials-icon" 
-                src="./img/linkedin_logo.webp"
+                src="./assets/img/linkedin_logo.webp"
                 alt="The LinkedIn logo: a blue square with the white letter IN in the centre" 
                 width="100px"
                 loading="lazy"/>
                 <span>Gina's LinkedIn</span>
             </a>
         
-            <a href="https://github.com/GinaHorch" title="GitHub" target="_blank" rel="noopener no-referrer">
+            <a href="https://github.com/GinaHorch" aria-lable="Visit Gina's GitHub profile" title="GitHub" target="_blank" rel="noopener no-referrer">
                 <img class="socials-icon" 
-                src="./img/github.svg"
+                src="./assets/img/github.svg"
                 alt="The GitHub logo: a black circle with the silhouette of a white cat, with one tentacle arm" 
                 width="100px"
                 loading="lazy"/>
                 <span>Gina's GitHub</span>
             </a>
-        </div> 
         </address>
+      </section>
         <small>&copy; 2024 Social Insight Solutions</small>
     </footer>
 </body>
