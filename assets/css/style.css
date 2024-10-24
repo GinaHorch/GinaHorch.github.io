@@ -556,7 +556,7 @@ nav .left details ul li a {
     padding: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 2px solid var(--accent);
+    border: 2px solid var(--background-light);
     border-radius: 5px;
     width: 50%;
 }
@@ -573,7 +573,7 @@ nav .left details ul li a {
     flex-direction: column;
     justify-content: space-between;
     flex: 2;
-    border: 2px solid var(--accent);
+    border: 2px solid var(--background-light);
     border-radius: 5px;
     padding: 5px;
     margin-right: 5px;
@@ -584,7 +584,7 @@ nav .left details ul li a {
     flex-direction: column;
     justify-content: space-between;
     flex: 2;
-    border: 2px solid var(--accent);
+    border: 2px solid var(--background-light);
     border-radius: 5px;
     padding: 5px;
 }
@@ -606,7 +606,7 @@ nav .left details ul li a {
     display: flex;
     justify-content: center;
     padding: 5px 10px;
-    border: 2px solid var(--background-dark);
+    border: 2px solid var(--background-light);
     border-radius: 5px;
     transition: .1s;
     font-size: 1rem;
