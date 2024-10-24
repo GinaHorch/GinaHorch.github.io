@@ -379,11 +379,12 @@ nav .left details ul li a {
     margin-top: 20px;
 }
 
-.ally-pledge {
+.ally-pledge a {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 20px;
 }
 
 .ally-pledge .ally {
@@ -415,6 +416,8 @@ nav .left details ul li a {
     /* border: 1px solid var(--action); */
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: var(--primary);
+    color: var(--text-light)
 }
 
 .bio-text h2 {
@@ -457,8 +460,6 @@ nav .left details ul li a {
     padding: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: var(--primary);
-    color: var(--text-light)
 }
 
 .skills-section h2 {
@@ -511,6 +512,8 @@ nav .left details ul li a {
     padding: 0 20px;
     margin-bottom: 10px;
     /* border: 1px solid var(--action); */
+    background-color: var(--primary);
+    color: var(--text-light)
 }
 
 .project-section h2 {
@@ -609,8 +612,6 @@ nav .left details ul li a {
 /* Section 6: Contact */
 
 .contact-form {
-    background-color: var(--primary);
-    color: var(--text-light);
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
@@ -826,7 +827,7 @@ footer {
     border: 1px solid var(--background-dark);
 }
 
-.footer {
+address {
     padding: 1rem;
     display: flex;
     margin-top: auto;
@@ -834,7 +835,7 @@ footer {
     align-items: center;
 }
 
-.footer a span {
+address a span {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -843,19 +844,19 @@ footer {
     font-weight: 600;
 }
 
-.footer a {
+address a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.footer a:hover {
+address a:hover {
     color: var(--primary);
     background-color: var(--neutral-light);
 }
 
-.footer a .socials-icon {
+address a .socials-icon {
     width: 80px;
     height: 80px;
     display: flex;

@@ -1,0 +1,38 @@
+name: Build and Minify
+
+# Trigger this workflow on push to the main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Run the production build (minification)
+      - name: Run build
+        run: npm run build
+
+      # Step 5: Deploy or commit the minified files
+      - name: Commit minified files
+        run: |
+          git config --global user.name "GinaHorch"
+          git config --global user.email "reggiaus@hotmail.com"
+          git add dist/
+          git commit -m "Minified assets"
+          git push
