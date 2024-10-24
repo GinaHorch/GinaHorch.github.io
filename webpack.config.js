@@ -4,8 +4,9 @@ const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
-  entry: './assets/js/script.js',  // Your JS entry file
-  output: {
+    mode: 'production',
+    entry: './assets/js/script.js',  // Your JS entry file
+    output: {
     filename: 'script.min.js',  // Minified JS output file
     path: path.resolve(__dirname, 'dist'),  // Output folder
   },
