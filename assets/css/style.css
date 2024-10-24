@@ -371,13 +371,39 @@ nav .left details ul li a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 70px;
+    /* width: 70px;
     height: 50px;  
     object-fit: contain;  
-    padding: 5px;
+    padding: 5px; */
     gap: 10px;
+    margin-top: 20px;
 }
 
+.ally-pledge {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ally-pledge .ally {
+    width: 300px;
+    height: auto;
+    max-height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.ally-pledge span {
+    font-size: 1.2rem;
+    color: var(--primary);
+    text-align: center;
+    cursor: pointer;
+}
+
+.ally-pledge span:hover {
+    color: var(--accent)
+}
 /* Section 3: About me */
 
 .bio-text {
@@ -829,8 +855,7 @@ footer {
     background-color: var(--neutral-light);
 }
 
-.footer a .socials-icon,
-.footer a .ally {
+.footer a .socials-icon {
     width: 80px;
     height: 80px;
     display: flex;
