@@ -859,57 +859,73 @@ textarea:focus {
 /* footer */
 footer {
     margin-top: auto;
-    border: 1px solid var(--background-dark);
+    border: 2px solid var(--background-dark);
     background-color: var(--primary);
-    color: var(--text-light)
+    color: var(--text-light);
+    text-align: center;
+    padding: 20px;
 }
 
-address {
-    padding: 1rem;
+footer address {
     display: flex;
-    margin-top: auto;
-    justify-content: space-around;
-    align-items: center;
-}
-
-address a span {
-    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+}
+
+footer address a span {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 600;
 }
 
-address a {
+footer address a {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--background-light);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
 }
 
-address a:hover {
+footer address a:hover {
     color: var(--primary);
     background-color: var(--neutral-light);
 }
 
-address a .socials-icon {
+footer .socials-icon {
     width: 80px;
-    height: 80px;
-    display: flex;
+    height: auto;
+    /* display: flex;
     flex-shrink: 2;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
 }
 
-footer .copy-right {
-    display: flex;
-    flex-shrink: 0;
-    justify-content: center;
+footer small {
+    display: block;
+    margin-top: 20px;
     color: var(--text-light);
-    font-size: 0.694rem;
+    font-size: 0.9rem;
     font-weight: 400;
-    padding: 20px;
+}
+
+/* larger screens */
+@media (min-width: 768px) {
+    footer address {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer address a {
+        width: auto;
+    }
 }
 
 /* in about.html - resume section */
