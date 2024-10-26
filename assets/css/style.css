@@ -840,6 +840,8 @@ textarea:focus {
 footer {
     margin-top: auto;
     border: 1px solid var(--background-dark);
+    background-color: var(--primary);
+    color: var(--text-light)
 }
 
 address {
@@ -854,7 +856,7 @@ address a span {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-color);
+    color: var(--text-light);
     font-size: 1rem;
     font-weight: 600;
 }
@@ -883,7 +885,7 @@ footer .copy-right {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
-    color: var(--text-color);
+    color: var(--text-light);
     font-size: 0.694rem;
     font-weight: 400;
     padding: 20px;
