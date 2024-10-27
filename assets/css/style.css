@@ -512,26 +512,132 @@ section.acknowledgement .acknowledgement-links a:hover {
     align-self: center;
 }
 
-/* Section 4: My tech Skills */
+/* Section 4: My tech Skills/interactive tech stack */
 
 .skills-section {
-    
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 .skills-section h2 {
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
 
 .skills-section .text {
     text-align: center;
-    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    padding: 0 10px;
 }
 
-.skills-section .cells {
+/* General container for the tech stack */
+.tech-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between each tech item */
+    padding: 20px;
+}
+
+/* Styling each tech item (logo + name) following mobile first*/
+.tech-item {
+    position: relative;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    padding: 15px;
+    outline: none; /* Avoid default focus outline */
+}
+
+/* Styling for the logos */
+.tech-logo {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Smooth enlarge effect */
+}
+
+/* Hidden by default */
+.tech-name {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    background-color: var(--background-dark);
+    color: var(--text-light);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+/* Hover effect: Enlarge logo and show tech name */
+.tech-item:hover .tech-logo {
+    transform: scale(1.2); /* Slightly enlarge */
+}
+
+.tech-item:hover .tech-name {
+    opacity: 1;
+    visibility: visible;
+}
+
+.tech-item:focus {
+    outline: 2px solid var(--accent); /* Customize the focus state */
+}
+
+/* Media queries for larger screens */
+@media (min-width: 768px) {
+    .skills-section h2 {
+        font-size: 2.4rem; /* Scale up heading */
+    }
+
+    .skills-section .text {
+        font-size: 1.2rem;
+        padding: 0 30px; /* Increase padding on larger screens */
+    }
+
+    .tech-stack {
+        gap: 20px; /* More space between tech items */
+        padding: 40px; /* Increase padding for larger devices */
+    }
+
+    .tech-item {
+        width: 100px; /* Slightly larger tech item on tablet */
+    }
+}
+
+/* Media queries for large desktop */
+@media (min-width: 1024px) {
+    .tech-item {
+        width: 120px; /* Adjust for large desktops */
+    }
+}
+
+/* Make sure touch devices respond to tap with this media query */
+@media (hover: none) {
+    .tech-item:active .tech-logo {
+        transform: scale(1.2); /* Same interaction as hover for mobile */
+    }
+    .skills-section h2 {
+        font-size: 3rem; /* Larger heading on desktop */
+    }
+
+    .skills-section .text {
+        font-size: 1.3rem;
+        padding: 0 50px;
+    }
+}
+
+/* OLD STYLE - REMOVE ONCE THE INTERACTIVE STACK WORKS
+    .skills-section .cells {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -559,7 +665,7 @@ section.acknowledgement .acknowledgement-links a:hover {
 .skills-section .cells .cell span {
     font-size: 1.2rem;
     padding: 5px;
-}
+} */
 
 /* Section 5: My tech projects */
 
@@ -610,7 +716,7 @@ section.acknowledgement .acknowledgement-links a:hover {
     margin-right: 5px;
 }
 
-.project-section .project-container .recipes {
+.project-section .project-container .crowdfunding {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -680,6 +786,7 @@ section.acknowledgement .acknowledgement-links a:hover {
     background-color: var(--neutral-light);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
 }
 
 .contact-form input,
