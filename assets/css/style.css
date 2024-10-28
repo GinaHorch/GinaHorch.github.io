@@ -754,11 +754,12 @@ section.acknowledgement .acknowledgement-links a:hover {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease-in-out;
-    min-height: 550px;
-    max-height: 100%;
+    min-height: 450px;
+    max-height: 450px;
     height: auto;
     /* overflow: hidden; */
     overflow-y: auto;
+    overflow-y: scroll;
     padding-right: 10px;
 }
 
@@ -767,12 +768,25 @@ section.acknowledgement .acknowledgement-links a:hover {
 }
 
 .project-section .project-container article::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 .project-section .project-container article::-webkit-scrollbar-thumb {
     background-color: var(--accent);
     border-radius: 5px;
+}
+
+.project-section .project-container article h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.project-section .project-container article .project-info p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
 }
 
 /* Project Image */
@@ -796,6 +810,7 @@ section.acknowledgement .acknowledgement-links a:hover {
 .project-section .project-container .project-info {
     flex-grow: 1; /* Allow the content to fill available space */
     text-align: center;
+    overflow-y: auto;
 }
 
 /* Tech stack section within tiles */
