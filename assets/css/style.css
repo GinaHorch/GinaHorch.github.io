@@ -277,48 +277,6 @@ nav ul li a:hover, nav ul li a:focus {
     border-radius: 5px;
 }
 
-/* nav .right {
-    display: flex;
-}
-
-nav .left {
-    color: var(--text-light);
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-top: 5px;
-}
-
-details .burger-icon {
-    transition: transform 0.1s;
-    width: 24px;
-    height: 24px;
-    padding: 0;
-}
-
-details[open] .burger-icon {
-    transform: rotate(90deg);
-}
-  
-summary {
-    list-style: none;
-    cursor: pointer;
-}
-
-details ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav .left details ul {
-    display: flex;
-    gap: 24px;
-    margin-right: 16px;
-  }
-
-nav .left details ul li a {
-    color: var(--text-light);
-} */
-
 /* Section 1: Hero */
 
 /* Mobile-first: Stack content vertically for smaller screens */
@@ -377,13 +335,6 @@ nav .left details ul li a {
     color: var(--action);
     background-color: var(--neutral-mid);
 } 
-
-/* .hero .hero-image {
-    display: flex;
-    justify-content: right;
-    margin-top: 5px;
-    margin-bottom: 5px;
-} */
 
 /* Image for mobile first */
 .hero .hero-image img {
@@ -611,7 +562,7 @@ section.acknowledgement .acknowledgement-links a:hover {
 }
 
 .insomnia-logo {
-    width: 150%;
+    width: 130%;
     height: auto;
 }
 
@@ -907,94 +858,6 @@ textarea:focus {
     }
 }
 
-/* media queries to be re-done and sectioned off */
-
-
-@media (max-width: 720px) {
-    /* Header */
-    header {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    details[open] #menu {
-        display: flex;
-        flex-direction: column;
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-
-    header nav ul {
-      display: flex;
-      gap: 24px;
-      margin-right: 16px;
-    }
-
-    header .right {
-        display: flex;
-        flex-shrink: 1;
-    }
-    
-   /* Section 3: About */
-
-    .bio-text h2 {
-        font-size: 1.728rem;
-    }
-   
-    /* Section 5: My tech projects */
-    .project-section {
-        padding: 0 15px;
-    }
-
-    .project-text h2 {
-        font-size: 1.728rem;
-    }
-
-    .project-section .project-container span {
-        font-size: 1rem;
-    }
-  }
-  
-
-
-@media (max-width: 480px) {
-    
-    /* Header */
-    header {
-        padding: 0 10px;
-    }
-
-    details[open] #menu {
-        display: flex;
-        flex-direction: column;
-        font-size: 0.833rem;
-        font-weight: 400;
-    }
-
-    .flags {
-        padding: 0 2px;
-        /* need to make flags go smaller */
-        
-    }
-
-    /* Section 3: About */
-
-    .bio-text h2 {
-        font-size: 1.44rem;
-    }
-   
-    /* Section 5: My tech projects */
-    .project-section {
-    padding: 0;
-    }
-
-    .project-text h2 {
-        font-size: 1.44rem;
-    }
-  }
-
-   
- 
 /* footer */
 footer {
     margin-top: auto;
