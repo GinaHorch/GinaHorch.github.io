@@ -218,7 +218,7 @@ header {
     max-height: 40px;
     width: auto;
     object-fit: contain;  
-    border: 1px solid var(--background-dark);
+    /* border: 1px solid var(--background-dark); */
 }
 
 /* Navbar */ 
@@ -779,10 +779,9 @@ section.acknowledgement .acknowledgement-links a:hover {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     min-height: 600px;
-    max-height: 650px;
+    max-height: 100%;
     height: auto;
     overflow-y: auto;
-    overflow-y: scroll;
     padding-right: 10px;
 }
 
