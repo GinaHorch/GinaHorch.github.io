@@ -211,18 +211,27 @@ header {
     z-index: 1000;
 }
 
-.right .rainbow {
+.right img.rainbow {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 50px;
+    max-height: 40px;
+    width: auto;
     object-fit: contain;  
     border: 1px solid var(--background-dark);
-    /* margin-top: 5px;
-    margin-bottom: 5px; */
+    margin-top: 5px;
 }
 
 /* Navbar */ 
+nav {
+    border-bottom: 2px solid var(--accent); /* Add a bottom border to visually separate */
+    padding-bottom: 10px; /* Ensure there's enough space inside the navbar */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better distinction */
+}
+
+header + section {
+    padding-top: 20px; /* Increase space between the navbar and the hero section */
+}
 
 /* Mobile-first: Hidden menu by default on mobile */
 #menu {
@@ -274,7 +283,7 @@ header {
         display: none; /* Hide hamburger menu on larger screens */
     }
 
-    .right .rainbow {
+    .right img.rainbow {
         position: absolute;
         width: 70px;
         top: 10px;
