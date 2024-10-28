@@ -217,7 +217,8 @@ header {
     right: 10px;
     max-height: 40px;
     width: auto;
-    object-fit: contain;  
+    object-fit: contain;
+    margin-bottom: 5px;  
 }
 
 /* Navbar */ 
@@ -411,10 +412,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 30px;
     margin-top: 10px;
     margin-bottom: 10px;
     text-align: center;
+    background-color: var(--neutral-mid);
+    border-radius: 10px;
 }
 
 .acknowledgement h2 {
