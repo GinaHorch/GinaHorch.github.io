@@ -1,5 +1,3 @@
-// import '../css/style.css' CHECK IF THIS IS CORRECT
-
 const summary = document.querySelector('summary');
 summary.addEventListener('click', () => {
   const expanded = summary.getAttribute('aria-expanded') === 'true' || false;
@@ -14,4 +12,17 @@ document.querySelectorAll('.tech-item').forEach(item => {
   item.addEventListener('mouseout', () => {
       item.style.backgroundColor = 'transparent'; // Reset background
   });
+});
+
+const navbarToggler = document.querySelector('.navbar-toggler');
+const menu  = document.querySelector('#menu');
+
+navbarToggler.addEventListener('click', () => {
+  const isExpanded = navbarToggler.getAttribute('aria-expanded') == 'true';
+
+  // Toggle the "aria-expanded" attribute
+  navbarToggler.setAttribute('aria-expanded', !isExpanded);
+    
+  // Toggle the active class for the menu
+  menu.classList.toggle('active');
 });

@@ -23,26 +23,24 @@
         <!-- navigation bar -->
         <nav>
             <div class="left">
-                <details>
-                    <summary aria-label="Toggle navigation menu" aria-expanded="false">
-                        <div class="burger-icon">
-                            <svg aria-label="Navigation Menu" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M0 4h24M0 12h24M0 20h24" stroke="white" stroke-width="4" />
-                            </svg>
-                        </div>
-                    </summary>
-                    <ul id="menu">
-                        <li><a href="/">Home</a></li>
-                        <li><a href="./about.html">About</a></li>
-                        <li><a href="#skills">My skills</a></li>   
-                        <li><a href="./projects.html">My projects</a></li>
-                        <li><a href="#contact">Get in touch</a></li>
-                    </ul>
-                </details>    
-        </nav> 
+                <button class="navbar-toggler" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <svg aria-label="Navigation Menu" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 4h24M0 12h24M0 20h24" stroke="white" stroke-width="4" />
+                    </svg>
+                </button>
+                <ul id="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#skills">My skills</a></li>   
+                    <li><a href="./projects.html">My projects</a></li>
+                    <li><a href="#contact">Get in touch</a></li>
+                </ul>
+            </div>       
             <div class="right">
-                <img class="rainbow" src="./assets/img/rainbow-flag.webp" alt="Pride flag supporting LGBTQIA+ community" width="100px" loading="lazy"/>
+                <img class="rainbow" src="./assets/img/rainbow-flag.webp" 
+                     alt="Pride flag supporting LGBTQIA+ community" width="100px" loading="lazy"/>
             </div>
+        </nav>
     </header>
 
     <main>
@@ -294,7 +292,7 @@
 
                 <article class="crowdfunding">
                     <img class="icon" 
-                    src="./assets/img/culture4kids.png"
+                    src="./assets/img/crowdfunding-fullstack.png"
                     alt="Culture4Kids - A crowdfunding platform supporting Aboriginal children in care" />
                 <div class="project-info">
                 <p>As part of the She Codes Plus program, I developed a crowdfunding platform aimed at supporting grassroots cultural programs for Aboriginal children in care. I designed and implemented an Entity Relationship Diagram (ERD) and built a scalable backend architecture using Python and Django Rest Framework. For the frontend, I utilised React and JavaScript to create an intuitive and responsive user interface.</p>
