@@ -771,6 +771,36 @@ section.acknowledgement .acknowledgement-links a:hover {
     text-align: center;
 }
 
+/* Tech stack section within tiles */
+.project-container .project-info .tile-tech-stack {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.project-container .project-info .tile-tech-stack h4 {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.project-container .project-info .tile-tech-stack ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+
+.project-container .project-info .tile-tech-stack ul li {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.project-container .project-info .tile-tech-stack ul li img {
+    width: 20px;
+    height: auto;
+    object-fit: contain;
+}
 /* Links inside project cards */
 .project-section .project-container a {
     display: inline-flex;
