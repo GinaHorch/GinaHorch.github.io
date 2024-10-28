@@ -15,17 +15,14 @@ document.querySelectorAll('.tech-item').forEach(item => {
 });
 
 const navbarToggler = document.querySelector('.navbar-toggler');
-const menu  = document.querySelector('#menu');
-
-// Function to toggle menu and update aria-expanded
-function toggleMenu() {
-  const isExpanded = navbarToggler.getAttribute('aria-expanded') === 'true'; // Use strict comparison
-  navbarToggler.setAttribute('aria-expanded', !isExpanded);
-  menu.classList.toggle('active');
-}
+const menu = document.querySelector('#menu');
 
 // Add event listener to toggle menu on click
-navbarToggler.addEventListener('click', toggleMenu);
+navbarToggler.addEventListener('click', () => {
+  const isExpanded = navbarToggler.getAttribute('aria-expanded') === true;
+  navbarToggler.setAttribute('aria-expanded', !isExpanded);
+  menu.classList.toggle('active');
+});
 
 // Ensure the menu is reset when resizing the window
 window.addEventListener('resize', () => {
