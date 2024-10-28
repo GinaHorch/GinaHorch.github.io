@@ -238,6 +238,12 @@ nav ul.active {
     z-index: 999;
 }
 
+.navbar-toggler svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--text-light)
+}
+
 /* Larger screens: Enhance for desktop */
 @media (min-width: 720px) {
     nav ul {
