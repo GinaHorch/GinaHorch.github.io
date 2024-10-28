@@ -664,10 +664,11 @@ section.acknowledgement .acknowledgement-links a:hover {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    /* margin-bottom: 10px; */
+    margin: 0 auto;
     /* border: 1px solid var(--action); */
     background-color: var(--primary);
-    color: var(--text-light)
+    color: var(--text-light);
+    max-width: 1200px;
 }
 
 .project-section h2 {
@@ -745,7 +746,8 @@ section.acknowledgement .acknowledgement-links a:hover {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease-in-out;
-    min-height: 400px;
+    min-height: 500px;
+    max-height: 500px;
 }
 
 .project-section .project-container article:hover {
@@ -768,41 +770,43 @@ section.acknowledgement .acknowledgement-links a:hover {
 }
 
 /* Flexbox keeps the "See for yourself" link at the bottom */
-.project-container .project-info {
+.project-section .project-container .project-info {
     flex-grow: 1; /* Allow the content to fill available space */
     text-align: center;
 }
 
 /* Tech stack section within tiles */
-.project-container .project-info .tile-tech-stack {
+.project-section .project-container .project-info .tile-tech-stack {
     margin-top: 10px;
     font-size: 0.9rem;
 }
 
-.project-container .project-info .tile-tech-stack h4 {
+.project-section .project-container .project-info .tile-tech-stack h4 {
     margin-bottom: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 600;
+    text-align: center;
 }
 
-.project-container .project-info .tile-tech-stack ul {
+.project-section .project-container .project-info .tile-tech-stack ul {
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
     display: flex;
-    gap: 10px;
+    gap: 15px;
     padding: 0;
 }
 
-.project-container .project-info .tile-tech-stack ul li {
+.project-section .project-container .project-info .tile-tech-stack ul li {
     display: flex;
     align-items: center;
     gap: 5px;
-    flex-basis: 25%;
+    flex-basis: 20%;
+    text-align: center;
 }
 
-.project-container .project-info .tile-tech-stack ul li img {
-    width: 20px;
+.project-section .project-container .project-info .tile-tech-stack ul li img {
+    width: 30px;
     height: auto;
     object-fit: contain;
 }
