@@ -203,11 +203,11 @@ header {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 100px;
+    width: 70px;
     object-fit: contain;  
     border: 1px solid var(--background-dark);
-    margin-top: 5px;
-    margin-bottom: 5px;
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
 }
 
 /* Navbar */ 
@@ -233,7 +233,9 @@ nav ul.active {
     cursor: pointer;
     font-size: 1.5rem;
     padding: 0;
-    /* margin: 0; */
+    margin: 0;
+    display: block;
+    z-index: 999;
 }
 
 /* Larger screens: Enhance for desktop */
@@ -251,6 +253,7 @@ nav ul.active {
 
     .right .rainbow {
         position: absolute;
+        width: 100px;
         top: 10px;
         right: 10px;
     }
