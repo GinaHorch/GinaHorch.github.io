@@ -19,6 +19,7 @@ const menu = document.querySelector('#menu');
 
 // Add event listener to toggle menu on click
 navbarToggler.addEventListener('click', () => {
+  console.log("Hamburger clicked")
   const isExpanded = navbarToggler.getAttribute('aria-expanded') === 'true';
   navbarToggler.setAttribute('aria-expanded', !isExpanded);
   menu.classList.toggle('active');

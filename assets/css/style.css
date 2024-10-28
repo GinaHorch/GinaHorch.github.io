@@ -213,7 +213,7 @@ header {
 /* Navbar */ 
 
 /* Mobile-first: Hidden menu by default on mobile */
-nav ul {
+#menu {
     display: none;
     flex-direction: column;
     list-style: none;
@@ -221,7 +221,7 @@ nav ul {
     margin: 0;
 }
 
-nav ul.active {
+#menu.active {
     display: flex;
     flex-direction: column;
 }
@@ -577,10 +577,10 @@ section.acknowledgement .acknowledgement-links a:hover {
     transition: transform 0.3s ease-in-out; /* Smooth enlarge effect */
 }
 
-.insomnia-logo {
+/* .insomnia-logo {
     width: 130%;
     height: auto;
-}
+} */
 
 /* Hidden by default */
 .tech-name {
