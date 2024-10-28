@@ -203,7 +203,7 @@ header {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 70px;
+    width: 50px;
     object-fit: contain;  
     border: 1px solid var(--background-dark);
     /* margin-top: 5px;
@@ -241,7 +241,12 @@ nav ul.active {
 .navbar-toggler svg {
     width: 24px;
     height: 24px;
-    stroke: var(--text-light)
+    stroke: var(--text-light);
+    stroke-width: 4;
+}
+
+.navbar-toggler:focus {
+    outline: 2px solid var(--accent);
 }
 
 /* Larger screens: Enhance for desktop */
@@ -259,7 +264,7 @@ nav ul.active {
 
     .right .rainbow {
         position: absolute;
-        width: 100px;
+        width: 70px;
         top: 10px;
         right: 10px;
     }
