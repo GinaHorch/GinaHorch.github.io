@@ -724,11 +724,19 @@ section.acknowledgement .acknowledgement-links a:hover {
     .project-section .project-container {
         grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
     }
+
+    .project-section .project-container article {
+        min-height: 600px;
+    }
 }
 
 @media (min-width: 1024px) {
     .project-section .project-container {
         grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+    }
+
+    .project-section .project-container article {
+        min-height: 650px;
     }
 }
 
@@ -746,12 +754,25 @@ section.acknowledgement .acknowledgement-links a:hover {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease-in-out;
-    min-height: 500px;
-    max-height: 500px;
+    min-height: 550px;
+    max-height: 100%;
+    height: auto;
+    /* overflow: hidden; */
+    overflow-y: auto;
+    padding-right: 10px;
 }
 
 .project-section .project-container article:hover {
     transform: scale(1.05);
+}
+
+.project-section .project-container article::-webkit-scrollbar {
+    width: 8px;
+}
+
+.project-section .project-container article::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 5px;
 }
 
 /* Project Image */
@@ -762,6 +783,8 @@ section.acknowledgement .acknowledgement-links a:hover {
     margin-bottom: 15px;
     border-radius: 8px;
     transition: transform 0.3s ease-in-out;
+    max-height: 200px;
+    object-fit: contain;
 }
 
 /* Hover effect for images */
