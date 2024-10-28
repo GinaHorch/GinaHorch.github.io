@@ -251,7 +251,7 @@ header {
 
 /* Larger screens: Enhance for desktop */
 @media (min-width: 720px) {
-    nav ul {
+    #menu {
       display: flex;
       flex-direction: row;
       gap: 24px;

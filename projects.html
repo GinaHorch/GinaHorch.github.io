@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gina's portfolio showcasing web development projects, tech skills, and a contact form.">
+    <base href="https://ginahorch.github.io/">
+    <link rel="icon" type="image/webp" href="./assets/img/logo-header.webp">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="./assets/fonts/poppins-v21-latin-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://ginahorch.github.io/dist/style.min.css">
+    <script src="dist/script.min.js" defer></script> -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <link rel="stylesheet" href="assets/js/script.js"> -->
+    <!-- <script src="assets/js/script.js" defer></script> -->
+    <title>Gina's Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <!-- navigation bar -->
+        <nav>
+            <div class="left">
+                <button class="navbar-toggler" aria-label="Toggle navigation menu" aria-expanded="false">
+                    <svg aria-label="Navigation Menu" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 4h24M0 12h24M0 20h24" stroke="var(--text-light)" stroke-width="4" />
+                    </svg>
+                </button>
+                <ul id="menu">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="#skills">My skills</a></li>   
+                    <li><a href="./projects.html">My projects</a></li>
+                    <li><a href="#contact">Get in touch</a></li>
+                </ul>
+            </div>       
+            <div class="right">
+                <img class="rainbow" src="./assets/img/rainbow-flag.webp" 
+                     alt="Pride flag supporting LGBTQIA+ community" width="100px" loading="lazy"/>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Section 2: Acknowledgement -->
+    <section class="acknowledgement">
+        <h2>Acknowledgement</h2>
+        <p>As a non-Aboriginal woman of German heritage I wish to acknowledge and pay respects to the Traditional Custodians of the lands, waters and skies throughout Australia
+            and recognise their continuing connection to culture and communities. 
+            I respectfully acknowledge the Whadjuk and Mooro people of the Noongar nation upon whose unceded land I live and where created this website. 
+            I pay my respect to all Elders both past and present and emerging leaders.</p>
+            <!-- Flags and Ally pledge container -->
+            <div class="flags-and-ally">
+                <img class="flags" src="./assets/img/aboriginal_flag.webp" alt="Aboriginal Flag" width="100px" loading="lazy"/>
+                <!-- <img class="ally" src="./assets/img/AllyPledge_LinkedInBackground.jpg" 
+                     alt="Evolve Communities Ally Pledge in warm colours saying I pledge to keep showing up for First Nations Peoples"
+                     width="500px"
+                     loading="lazy"/> -->
+                <img class="flags" src="./assets/img/TorresStraitIslander-flag.webp" alt="Torres Strait Islander Flag" width="100px" loading="lazy"/>
+            </div>
+    </section>
+
+    <!-- Section 5: My Tech Projects -->
+        
+    <section id="projects" class="project-section">
+        <div class="project-text">
+            <h2>My tech projects</h2>
+            <p>"Welcome to my tech project portfolio! Each project represents a significant step in my journey as a web developer, showcasing both front-end and back-end technologies. From creating dynamic web applications to automating complex data processes, I apply a diverse tech stack tailored to the needs of each project. My projects span a variety of technologies, including HTML, CSS, JavaScript, React.js, Python, Django, SQL, and more. I’m continuously expanding my skillset, and each new project allows me to apply innovative solutions and improve my problem-solving capabilities. Take a closer look at the detailed tech stack used in each project below!"</p>
+        </div> 
+        <div class="project-container"> 
+            <article class="calculator">
+                <img class="icon" 
+                src="./assets/img/calculator.png"
+                alt="On-screen calculator created using HTML, CSS, and JavaScript in The Odin Project Foundations Course" />
+            <div class="project-info">
+            <p>As final project of The Odin Project Foundations Course, I created an on-screen calculator using HTML, CSS, and JavaScript.</p>
+            </div>   
+                <a href="https://github.com/GinaHorch/OdinCalculator" 
+                   title="GitHub Repository - Odin Calendar" 
+                   target="_blank" rel="noopener no-referrer"
+                   aria-label="View the GitHub repository for the Odin Project calculator">
+                   <i class="fa-solid fa-eye"></i> 
+                   <span>See for yourself</span>
+                </a>
+            </article>
+
+            <article class="crowdfunding">
+                <img class="icon" 
+                src="./assets/img/crowdfunding-fullstack.png"
+                alt="Culture4Kids - A crowdfunding platform supporting Aboriginal children in care" />
+            <div class="project-info">
+            <p>As part of the She Codes Plus program, I developed a crowdfunding platform aimed at supporting grassroots cultural programs for Aboriginal children in care. I designed and implemented an Entity Relationship Diagram (ERD) and built a scalable backend architecture using Python and Django Rest Framework. For the frontend, I utilised React and JavaScript to create an intuitive and responsive user interface.</p>
+            </div>    
+                <a href="https://github.com/GinaHorch/crowdfunding_back_end" 
+                   title="GitHub" target="_blank" rel="noopener no-referrer"
+                   aria-label="View the GitHub repository for the crowdfunding platform culture4kids">
+                   <i class="fa-solid fa-eye"></i> 
+                   <span>See for yourself</span>
+                </a>
+            </article>
+
+            <article class="weather-project">
+                <img class="icon" 
+                src="./assets/img/weather-project.png"
+                alt="CSV weather data being processed into readable weather summaries, showcasing data transformation and automation skills." />
+            <div class="project-info">
+            <p>As part of the She Codes Plus program, I developed a program to process weather data from CSV files and generate meaningful text-based summaries. By transforming raw data into human-readable forecasts, this project demonstrates my ability to work with large datasets and automate complex data processing tasks.</p>
+            </div>    
+                <a href="https://github.com/GinaHorch/python-weather-project" 
+                   title="GitHub" target="_blank" rel="noopener no-referrer"
+                   aria-label="View the GitHub repository for the Python weather project">
+                   <i class="fa-solid fa-eye"></i> 
+                   <span>See for yourself</span>
+                </a>
+            </article>
+        </div>
+    </section>      
+    <footer>
+        <section class="footer">        
+          <address class="social-links">
+              <a href="https://www.linkedin.com/in/gina-horch" aria-label="Visit Gina's LinkedIn profile" title="LinkedIn" target="_blank" rel="noopener no-referrer">
+                  <img class="socials-icon" 
+                  src="./assets/img/LinkedinCircled.webp"
+                  alt="The LinkedIn logo: a blue square with the white letter IN in the centre" 
+                  width="100px"
+                  loading="lazy"/>
+                  <span>Gina's LinkedIn</span>
+              </a>
+          
+              <a href="https://github.com/GinaHorch" aria-lable="Visit Gina's GitHub profile" title="GitHub" target="_blank" rel="noopener no-referrer">
+                  <img class="socials-icon" 
+                  src="./assets/img/github.svg"
+                  alt="The GitHub logo: a black circle with the silhouette of a white cat, with one tentacle arm" 
+                  width="100px"
+                  loading="lazy"/>
+                  <span>Gina's GitHub</span>
+              </a>
+          </address>
+        </section>
+        <small>&copy; 2024 Social Insight Solutions</small>
+    </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
