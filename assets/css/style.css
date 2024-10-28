@@ -218,7 +218,6 @@ header {
     max-height: 40px;
     width: auto;
     object-fit: contain;  
-    /* border: 1px solid var(--background-dark); */
 }
 
 /* Navbar */ 
