@@ -850,10 +850,13 @@ section.acknowledgement .acknowledgement-links a:hover {
 }
 
 .project-section .project-container .project-info .tile-tech-stack ul {
-    display: flex;
+    /* display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
     list-style: none;
+    justify-items: center;
     gap: 10px;
     padding: 0;
     margin: 10px 0;
