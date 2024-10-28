@@ -223,15 +223,6 @@ header {
 }
 
 /* Navbar */ 
-nav {
-    border-bottom: 2px solid var(--accent); /* Add a bottom border to visually separate */
-    padding-bottom: 10px; /* Ensure there's enough space inside the navbar */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better distinction */
-}
-
-header + section {
-    padding-top: 20px; /* Increase space between the navbar and the hero section */
-}
 
 /* Mobile-first: Hidden menu by default on mobile */
 #menu {
@@ -323,7 +314,7 @@ header + section {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 0 auto;
+    margin: 5px auto;
     background-color: var(--primary);
     color: var(--text-light);
     text-align: center; /* Center text for mobile view */
@@ -866,6 +857,7 @@ section.acknowledgement .acknowledgement-links a:hover {
     list-style: none;
     gap: 10px;
     padding: 0;
+    margin: 10px 0;
 }
 
 .project-section .project-container .project-info .tile-tech-stack ul li {
@@ -877,10 +869,12 @@ section.acknowledgement .acknowledgement-links a:hover {
     text-align: center;
     max-width: 50px;
     margin: 0;
+    flex-shrink: 0;
+    text-align: center;
 }
 
 .project-section .project-container .project-info .tile-tech-stack ul li img {
-    width: 30px;
+    width: 40px;
     height: auto;
     object-fit: contain;
 }
