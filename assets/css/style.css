@@ -196,11 +196,13 @@ header {
     margin: 0;
     width: 100%;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .right .rainbow {
-    /* display: flex; */
+    position: absolute;
+    top: 10px;
+    right: 10px;
     width: 100px;
     object-fit: contain;  
     border: 1px solid var(--background-dark);
@@ -245,6 +247,10 @@ nav ul.active {
 
     .navbar-toggler {
         display: none; /* Hide hamburger menu on larger screens */
+    }
+
+    .right .rainbow {
+        position: static;
     }
 }
  /* Sticky navbar for larger screens */

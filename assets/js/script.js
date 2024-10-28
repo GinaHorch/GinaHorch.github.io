@@ -17,12 +17,31 @@ document.querySelectorAll('.tech-item').forEach(item => {
 const navbarToggler = document.querySelector('.navbar-toggler');
 const menu  = document.querySelector('#menu');
 
-navbarToggler.addEventListener('click', () => {
-  const isExpanded = navbarToggler.getAttribute('aria-expanded') == 'true';
-
-  // Toggle the "aria-expanded" attribute
+// Function to toggle menu and update aria-expanded
+function toggleMenu() {
+  const isExpanded = navbarToggler.getAttribute('aria-expanded') === 'true'; // Use strict comparison
   navbarToggler.setAttribute('aria-expanded', !isExpanded);
-    
-  // Toggle the active class for the menu
   menu.classList.toggle('active');
+}
+
+// Add event listener to toggle menu on click
+navbarToggler.addEventListener('click', toggleMenu);
+
+// Ensure the menu is reset when resizing the window
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 720) {
+    // Ensure menu is shown and aria-expanded is true on larger screens
+    menu.classList.remove('active');
+    navbarToggler.setAttribute('aria-expanded', 'false');
+  }
+});
+
+// Close the menu when clicking outside (for mobile)
+document.addEventListener('click', (event) => {
+  const isClickInside = navbarToggler.contains(event.target) || menu.contains(event.target);
+  
+  if (!isClickInside && window.innerWidth < 720) {
+    menu.classList.remove('active');
+    navbarToggler.setAttribute('aria-expanded', 'false');
+  }
 });
