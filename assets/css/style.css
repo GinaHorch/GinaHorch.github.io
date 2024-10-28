@@ -731,6 +731,12 @@ section.acknowledgement .acknowledgement-links a:hover {
     max-width: 1200px;
 }
 
+@media (max-width: 600px) {
+    .project-section .project-info .tile-tech-stack ul li {
+        flex-basis: 40%; /* Increase icon size slightly for mobile */
+    }
+}
+
 @media (min-width: 768px) {
     .project-section .project-container {
         grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
@@ -845,20 +851,23 @@ section.acknowledgement .acknowledgement-links a:hover {
 }
 
 .project-section .project-container .project-info .tile-tech-stack ul {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-    display: flex;
-    gap: 15px;
+    gap: 10px;
     padding: 0;
 }
 
 .project-section .project-container .project-info .tile-tech-stack ul li {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 5px;
     flex-basis: 20%;
     text-align: center;
+    max-width: 50px;
+    margin: 0;
 }
 
 .project-section .project-container .project-info .tile-tech-stack ul li img {
