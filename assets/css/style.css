@@ -412,7 +412,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     text-align: center;
@@ -437,14 +437,7 @@ header {
 .flags-and-ally .flags {
     width: 100px;
     height: auto; /* ensures flags remain proportion */
-}
-
-.flags-and-ally .ally {
-    width: 80%;
-    max-width: 500px; /* takes up full width on small screens */
-    height: auto;
     object-fit: contain;
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -462,25 +455,6 @@ header {
 .ask-aunty button:hover {
     background-color: var(--accent);
 }
-
-/* section.acknowledgement .acknowledgement-links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 10px;
-} */
-
-/* section.acknowledgement .acknowledgement-links a {
-    font-size: 1rem;
-    color: var(--primary);
-    text-decoration: none;
-    cursor: pointer;
-}
-
-section.acknowledgement .acknowledgement-links a:hover {
-    color: var(--accent);
-} */
 
 /* Media Query for Larger Screens */
 @media (min-width: 768px) {
