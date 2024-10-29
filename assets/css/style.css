@@ -413,10 +413,10 @@ header {
     justify-content: center;
     align-items: center;
     padding: 30px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
-    background-color: var(--neutral-mid);
+    background-color: var(--neutral-light);
     border-radius: 10px;
 }
 
@@ -430,7 +430,7 @@ header {
     flex-direction: column; /* mobile-first: vertical stacking */
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
 }
 
@@ -448,16 +448,30 @@ header {
     margin-bottom: 10px;
 }
 
-section.acknowledgement .acknowledgement-links {
+.ask-aunty button {
+    background-color: var(--primary);
+    color: var(--text-light);
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ask-aunty button:hover {
+    background-color: var(--accent);
+}
+
+/* section.acknowledgement .acknowledgement-links {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 10px;
-    gap: 10px; /* space between links */
-}
+} */
 
-section.acknowledgement .acknowledgement-links a {
+/* section.acknowledgement .acknowledgement-links a {
     font-size: 1rem;
     color: var(--primary);
     text-decoration: none;
@@ -466,7 +480,7 @@ section.acknowledgement .acknowledgement-links a {
 
 section.acknowledgement .acknowledgement-links a:hover {
     color: var(--accent);
-}
+} */
 
 /* Media Query for Larger Screens */
 @media (min-width: 768px) {
