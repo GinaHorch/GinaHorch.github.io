@@ -528,6 +528,95 @@ header {
     align-self: center;
 }
 
+.video-link {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 400px;
+}
+
+.video-thumbnail {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: white;
+    opacity: 0.8;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.career-highlights {
+    padding: 20px;
+    text-align: left;
+    background-color: var(--neutral-light);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.highlights-container h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.highlights-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.highlights-list li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.highlights-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.resume-section {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--neutral-light);
+    border-radius: 10px;
+}
+
+.resume-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.resume-section a {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-section img.resume-icon {
+    margin-right: 10px;
+}
+
+.resume-section a:hover {
+    color: var(--accent);
+}
+
 /* Section 4: My tech Skills/interactive tech stack */
 
 .skills-section {
@@ -1049,7 +1138,7 @@ footer small {
 }
 
 /* in about.html - resume section */
-.resume {
+/* .resume {
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -1081,4 +1170,4 @@ footer small {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+} */
