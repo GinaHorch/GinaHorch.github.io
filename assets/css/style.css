@@ -377,7 +377,6 @@ header {
         flex-direction: row; /* Horizontal layout for larger screens */
         justify-content: space-between;
         align-items: center;
-        min-height: 60vh;
     }
 
     .hero-text {
@@ -410,7 +409,6 @@ header {
 @media (min-width: 1024px) {
     .hero {
         padding: 0 5%;
-        min-height: 70vh;
     }
 
     .hero-text {
@@ -1084,21 +1082,13 @@ footer {
     padding: 20px;
 }
 
+    /* mobile-first */
 footer address {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-}
-
-footer address a span {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: 600;
+    gap: 15px;
 }
 
 footer address a {
@@ -1108,8 +1098,8 @@ footer address a {
     align-items: center;
     background-color: var(--background-light);
     border-radius: 10px;
-    padding: 10px;
-    width: 100px;
+    padding: 5px;
+    width: 80px;
     text-align: center;
 }
 
@@ -1118,20 +1108,28 @@ footer address a:hover {
     background-color: var(--neutral-light);
 }
 
+footer address a span {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 footer .socials-icon {
-    width: 80px;
+    width: 60px;
     height: auto;
-    /* display: flex;
-    flex-shrink: 2;
-    justify-content: space-evenly; */
 }
 
 footer small {
     display: block;
     margin-top: 20px;
     color: var(--text-light);
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
+}
+
+footer .ally {
+    max-width: 80%;
+    margin: 10px auto;
 }
 
 /* larger screens */
@@ -1139,9 +1137,22 @@ footer small {
     footer address {
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
     }
 
     footer address a {
         width: auto;
+    }
+
+    footer .socials-icon {
+        width: 80px; /* Larger size for larger screens */
+    }
+
+    footer .ally {
+        max-width: 500px; /* Adjust ally image size for larger screens */
+    }
+
+    footer small {
+        font-size: 1rem; /* Larger copyright text on bigger screens */
     }
 }
