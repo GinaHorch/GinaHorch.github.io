@@ -371,37 +371,54 @@ header {
     border: 1px solid var(--background-light);
 }
 
-/* Desktop view */
+/* larger screens - tablets */
 @media (min-width: 720px) {
     .hero {
         flex-direction: row; /* Horizontal layout for larger screens */
         justify-content: space-between;
+        align-items: center;
+        min-height: 60vh;
     }
 
-    .hero .hero-text {
-        text-align: left;
+    .hero-text {
+        flex: 1;
+        margin-right: 50px;
         max-width: 60%; /* Limit the text width on larger screens */
     }
 
-    .hero .hero-text h1 {
-        font-size: 2.4rem;
-    }
-
-    .hero .hero-text p {
+    .hero-text p {
         font-size: 1.2rem;
     }
 
-    .hero .hero-links {
+    .hero-links {
         flex-direction: row; /* Horizontal layout for links on larger screens */
         gap: 15px;
     }
 
-    .hero .hero-links a {
+    .hero-links a {
         width: auto; /* Let the buttons take their natural size */
     }
 
-    .hero .hero-image img {
-        max-width: 300px; /* Enlarge the image for larger screens */
+    .hero-image {
+        flex: 1;
+        max-width: 250px; /* Enlarge the image for larger screens */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* larger screens - desktop */
+@media (min-width: 1024px) {
+    .hero {
+        padding: 0 5%;
+        min-height: 70vh;
+    }
+
+    .hero-text {
+        max-width: 70%; /* Limit the text width on larger screens */
+    }
+
+    .hero-image {
+        max-width: 300px; /* limits the image size */
     }
 }
 
@@ -529,10 +546,8 @@ header {
 }
 
 .video-link {
-    /* position: relative;
-    display: inline-block; */
-    display: flex;
-    justify-content: center;
+    position: relative;
+    display: inline-block;
     width: 100%;
     max-width: 400px;
 }
@@ -666,11 +681,6 @@ header {
     height: auto;
     transition: transform 0.3s ease-in-out; /* Smooth enlarge effect */
 }
-
-/* .insomnia-logo {
-    width: 130%;
-    height: auto;
-} */
 
 /* Hidden by default */
 .tech-name {
@@ -807,40 +817,6 @@ header {
     padding: 0 10px;
     margin: 0 auto;
     max-width: 1200px;
-}
-
-@media (max-width: 600px) {
-    .project-section .project-info .tile-tech-stack ul li {
-        flex-basis: 40%; /* Increase icon size slightly for mobile */
-    }
-}
-
-@media (min-width: 768px) {
-    .project-section .project-container {
-        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
-    }
-
-    .project-section .project-container article {
-        min-height: 700px;
-    }
-
-    .project-section .project-container h3 {
-        font-size: 1.5rem; /* Medium size for tablets */
-    }
-}
-
-@media (min-width: 1024px) {
-    .project-section .project-container {
-        grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
-    }
-
-    .project-section .project-container article {
-        min-height: 800px;
-    }
-
-    .project-section .project-container h3 {
-        font-size: 1.8rem; /* Larger size for desktops */
-    }
 }
 
 /* Project Card */
@@ -981,6 +957,39 @@ header {
     outline-offset: 3px;
 }
 
+@media (max-width: 600px) {
+    .project-section .project-info .tile-tech-stack ul li {
+        flex-basis: 40%; /* Increase icon size slightly for mobile */
+    }
+}
+
+@media (min-width: 768px) {
+    .project-section .project-container {
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+    }
+
+    .project-section .project-container article {
+        min-height: 700px;
+    }
+
+    .project-section .project-container h3 {
+        font-size: 1.5rem; /* Medium size for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-section .project-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+    }
+
+    .project-section .project-container article {
+        min-height: 800px;
+    }
+
+    .project-section .project-container h3 {
+        font-size: 1.8rem; /* Larger size for desktops */
+    }
+}
 /* Section 6: Contact */
 
 .contact-form {
@@ -1136,38 +1145,3 @@ footer small {
         width: auto;
     }
 }
-
-/* in about.html - resume section */
-/* .resume {
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-.resume a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.resume a span {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--text-color);
-    font-size: 1rem;
-    font-weight: 600;
-}
-
-.resume a img {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    flex-shrink: 2;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
