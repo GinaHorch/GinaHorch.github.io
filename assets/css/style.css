@@ -649,7 +649,7 @@ header {
 
 .skills-section h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
     margin-bottom: 15px;
 }
@@ -754,10 +754,7 @@ header {
     .tech-item:active .tech-logo {
         transform: scale(1.2); /* Same interaction as hover for mobile */
     }
-    .skills-section h2 {
-        font-size: 3rem; /* Larger heading on desktop */
-    }
-
+    
     .skills-section .text {
         font-size: 1.3rem;
         padding: 0 50px;
@@ -781,14 +778,11 @@ header {
 
 .project-section h2 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 10px;
 }
 
 .project-section .project-text {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
     text-align: center;
     padding: 10px;
     /* margin-top: 20px; */
@@ -912,9 +906,6 @@ header {
 }
 
 .project-section .project-container .project-info .tile-tech-stack ul {
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: center; */
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
     list-style: none;
@@ -972,6 +963,10 @@ header {
 }
 
 @media (min-width: 768px) {
+    .project-section h2 {
+        font-size: 2.4rem;
+    }
+    
     .project-section .project-container {
         grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
     }
@@ -1109,7 +1104,7 @@ footer address a {
     background-color: var(--background-light);
     border-radius: 10px;
     padding: 5px;
-    width: 80px;
+    width: 100px;
     text-align: center;
 }
 
@@ -1125,7 +1120,7 @@ footer address a span {
 }
 
 footer .socials-icon {
-    width: 70px;
+    width: 90px;
     height: auto;
 }
 
@@ -1155,7 +1150,7 @@ footer .ally {
     }
 
     footer .socials-icon {
-        width: 80px; /* Larger size for larger screens */
+        width: 100px; /* Larger size for larger screens */
     }
 
     footer .ally {
