@@ -436,7 +436,7 @@ header {
 }
 
 .acknowledgement h2 {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
 }
 
@@ -492,6 +492,10 @@ header {
     .acknowledgement-links a {
         font-size: 1.2rem;  /* Larger font for desktop */
     }
+
+    .acknowledgement h2 {
+        font-size: 2.4rem;
+    }
 }
 
 /* Section 3: About me */
@@ -510,7 +514,7 @@ header {
 }
 
 .bio-text h2 {
-    font-size: 2.4rem;
+    font-size: 1.6rem;
     text-align: center;
 }
 
@@ -569,6 +573,12 @@ header {
     padding: 10px;
 }
 
+@media (min-width: 768px) {
+    .bio-text h2 {
+        font-size: 2.4rem; /* Scale up heading */
+    }
+}
+/* career highligths section in about.html */
 .career-highlights {
     padding: 20px;
     text-align: left;
@@ -603,7 +613,7 @@ header {
     font-size: 1.5rem;
     color: var(--accent);
 }
-
+/* resume section in about.html */
 .resume-section {
     text-align: center;
     padding: 20px;
@@ -612,7 +622,7 @@ header {
 }
 
 .resume-section h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 15px;
 }
 
