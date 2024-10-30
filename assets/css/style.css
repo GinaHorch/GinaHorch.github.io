@@ -380,7 +380,6 @@ header {
     }
 
     .hero-text {
-        flex: 1;
         margin-right: 50px;
         max-width: 60%; /* Limit the text width on larger screens */
     }
@@ -399,7 +398,6 @@ header {
     }
 
     .hero-image {
-        flex: 1;
         max-width: 250px; /* Enlarge the image for larger screens */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
@@ -1115,7 +1113,7 @@ footer address a span {
 }
 
 footer .socials-icon {
-    width: 60px;
+    width: 70px;
     height: auto;
 }
 
