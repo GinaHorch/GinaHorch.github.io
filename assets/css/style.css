@@ -561,12 +561,17 @@ header {
     display: inline-block; */
     width: 100%;
     max-width: 400px;
+    aspect-ratio: 16/9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .video-thumbnail, .award-certificate {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .play-button {
