@@ -552,7 +552,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     margin-top: 20px;
 }
 
@@ -569,7 +569,7 @@ header {
 
 .certificate-link {
     max-width: 200px;
-    aspect-ratio: 16/9;
+    aspect-ratio: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -604,6 +604,10 @@ header {
         align-items: center;
         justify-content: center;
         gap: 20px;
+    }
+    .certificate-link {
+        max-width: 200px;
+        aspect-ratio: auto;
     }
 }
 /* career highligths section in about.html */
