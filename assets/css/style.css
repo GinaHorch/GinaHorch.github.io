@@ -551,17 +551,16 @@ header {
 .media-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
+    align-items: flex-start;
+    gap: 20px;
     margin-top: 20px;
 }
 
-.video-link {
+.video-link, .certificate-link {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
     width: 100%;
     max-width: 400px;
-    aspect-ratio: 16/9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -569,10 +568,10 @@ header {
 
 .certificate-link {
     max-width: 200px;
-    aspect-ratio: auto;
+    /* aspect-ratio: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .video-thumbnail, .award-certificate {
@@ -606,8 +605,8 @@ header {
         gap: 20px;
     }
     .certificate-link {
-        max-width: 200px;
-        aspect-ratio: auto;
+        max-width: 220px;
+        /* aspect-ratio: auto; */
     }
 }
 /* career highligths section in about.html */
