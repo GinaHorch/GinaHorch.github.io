@@ -551,9 +551,10 @@ header {
 .media-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .video-link, .certificate-link {
@@ -568,6 +569,7 @@ header {
 
 .certificate-link {
     max-width: 200px;
+    margin: 0 auto;
     /* aspect-ratio: auto;
     display: flex;
     align-items: center;
