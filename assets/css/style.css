@@ -547,14 +547,23 @@ header {
     align-self: center;
 }
 
-.video-link {
-    position: relative;
-    display: inline-block;
+/* Container for video and certificate images */
+.media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-link, .certificate-link {
+    /* position: relative;
+    display: inline-block; */
     width: 100%;
     max-width: 400px;
 }
 
-.video-thumbnail {
+.video-thumbnail, .award-certificate {
     width: 100%;
     height: auto;
     border-radius: 10px;
@@ -576,6 +585,10 @@ header {
 @media (min-width: 768px) {
     .bio-text h2 {
         font-size: 2.4rem; /* Scale up heading */
+    }
+    .media-container {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
 /* career highligths section in about.html */
