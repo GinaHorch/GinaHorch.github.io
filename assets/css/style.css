@@ -567,6 +567,10 @@ header {
     justify-content: center;
 }
 
+.certificate-link {
+    max-width: 200px;
+}
+
 .video-thumbnail, .award-certificate {
     width: 100%;
     height: auto;
