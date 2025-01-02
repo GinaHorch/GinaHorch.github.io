@@ -720,7 +720,6 @@ header {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     height: 600px;
-    height: auto;
     overflow: hidden;
     padding-right: 10px;
 }
@@ -732,14 +731,15 @@ header {
 .skills-section .tech-stack-container .tech-card .tech-item-container {
     overflow-y: auto; /* Allow scrolling for overflowing items */
     padding-right: 10px; /* Add some padding for scrollbar spacing */
-    max-height: calc(100% - 50px);
+    height: calc(100% - 40px);
+    max-height: 560px;
 }
 .skills-section .tech-stack-container .tech-card:hover {
     transform: scale(1.05);
 }
 
 .skills-section .tech-stack-container .tech-card::-webkit-scrollbar {
-    width: 8px;
+    width: 6px;
 }
 
 .skills-section .tech-stack-container .tech-card::-webkit-scrollbar-thumb {
@@ -757,13 +757,18 @@ header {
 /* Styling each tech item (logo + name) following mobile first*/
 .skills-section .tech-stack-container .tech-card .tech-item {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 30%;
     text-align: center;
     transition: transform 0.3s ease-in-out;
     margin: 10px;
     padding: 15px;
     outline: none; /* Avoid default focus outline */
-    background-color: #f9f9f9; /* Light background for contrast */
+    background-color: var (--background-light); /* Light background for contrast */
+    border: 2px solid var (--background-light);
     border-radius: 8px; /* Rounded edges for logos */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -773,6 +778,8 @@ header {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out; /* Smooth enlarge effect */
+    object-fit: contain;
+    background-color: transparent;
 }
 
 /* Hidden by default */
