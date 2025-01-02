@@ -767,8 +767,8 @@ header {
     margin: 10px;
     padding: 15px;
     outline: none; /* Avoid default focus outline */
-    background-color: var (--background-light); /* Light background for contrast */
-    border: 2px solid var (--background-light);
+    background-color: #ffffff; /* Light background for contrast */
+    border: 2px solid #ffffff;
     border-radius: 8px; /* Rounded edges for logos */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
