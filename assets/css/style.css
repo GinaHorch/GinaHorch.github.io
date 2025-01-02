@@ -706,7 +706,7 @@ header {
 }
 
 /* Skills Card */
-.skills-section .tech-stack-container article {
+.skills-section .tech-stack-container .tech-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -726,20 +726,20 @@ header {
     padding-right: 10px;
 }
 
-.skills-section .tech-stack-container article:hover {
+.skills-section .tech-stack-container .tech-card:hover {
     transform: scale(1.05);
 }
 
-.skills-section .tech-stack-container article::-webkit-scrollbar {
+.skills-section .tech-stack-container .tech-card::-webkit-scrollbar {
     width: 8px;
 }
 
-.skills-section .tech-stack-container article::-webkit-scrollbar-thumb {
+.skills-section .tech-stack-container .tech-card::-webkit-scrollbar-thumb {
     background-color: var(--accent);
     border-radius: 5px;
 }
 /* Default for mobile */
-.skills-section .tech-stack-container article h3 {
+.skills-section .tech-stack-container .tech-card h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
     text-align: center;
@@ -747,7 +747,7 @@ header {
 }
 
 /* Styling each tech item (logo + name) following mobile first*/
-.skills-section .tech-stack-container article .tech-item {
+.skills-section .tech-stack-container .tech-card .tech-item {
     position: relative;
     width: 30%;
     text-align: center;
@@ -758,14 +758,14 @@ header {
 }
 
 /* Styling for the logos */
-.skills-section .tech-stack-container article .tech-item .tech-logo {
+.skills-section .tech-stack-container .tech-card .tech-item .tech-logo {
     width: 100%;
     height: auto;
     transition: transform 0.3s ease-in-out; /* Smooth enlarge effect */
 }
 
 /* Hidden by default */
-.skills-section .tech-stack-container article .tech-item .tech-name {
+.skills-section .tech-stack-container .tech-card .tech-item .tech-name {
     position: absolute;
     bottom: -30px;
     left: 50%;
@@ -782,16 +782,16 @@ header {
 }
 
 /* Hover effect: Enlarge logo and show tech name */
-.skills-section .tech-stack-container article .tech-item:hover .tech-logo {
+.skills-section .tech-stack-container .tech-card .tech-item:hover .tech-logo {
     transform: scale(1.2); /* Slightly enlarge */
 }
 
-.skills-section .tech-stack-container article .tech-item:hover .tech-name {
+.skills-section .tech-stack-container .tech-card .tech-item:hover .tech-name {
     opacity: 1;
     visibility: visible;
 }
 
-.skills-section .tech-stack-container article .tech-item:focus {
+.skills-section .tech-stack-container .tech-card .tech-item:focus {
     outline: 2px solid var(--accent); /* Customize the focus state */
 }
 
@@ -811,21 +811,21 @@ header {
         padding: 40px; /* Increase padding for larger devices */
     }
 
-    .skills-section .tech-stack-container article .tech-item {
+    .skills-section .tech-stack-container .tech-card .tech-item {
         width: 100px; /* Slightly larger tech item on tablet */
     }
 }
 
 /* Media queries for large desktop */
 @media (min-width: 1024px) {
-    .skills-section .tech-stack-container article .tech-item {
+    .skills-section .tech-stack-container .tech-card .tech-item {
         width: 120px; /* Adjust for large desktops */
     }
 }
 
 /* Make sure touch devices respond to tap with this media query */
 @media (hover: none) {
-    .skills-section .tech-stack-container article .tech-item:active .tech-logo {
+    .skills-section .tech-stack-container .tech-card .tech-item:active .tech-logo {
         transform: scale(1.2); /* Same interaction as hover for mobile */
     }
     
