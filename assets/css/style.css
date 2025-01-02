@@ -697,7 +697,7 @@ header {
 
 .skills-section .tech-stack-container {
     display: grid;
-    grid-template-columns: 1fr; /* Single column on mobile */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     width: 100%;
     padding: 0 10px;
@@ -710,8 +710,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--background-light);
-    border: 2px solid var(--background-light);
+    background-color: var(--background-dark);
+    border: 2px solid var(--background-dark);
     border-radius: 8px;
     padding: 20px;
     text-align: center;
