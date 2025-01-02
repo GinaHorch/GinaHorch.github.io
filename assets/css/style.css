@@ -710,8 +710,9 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--background-dark);
-    border: 2px solid var(--background-dark);
+    background-color: var(--primary);
+    border: 2px solid var(--primary);
+    color: #ffffff;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -719,7 +720,7 @@ header {
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease-in-out;
-    min-height: 600px;
+    height: 600px;
     max-height: 100%;
     height: auto;
     overflow-y: auto;
