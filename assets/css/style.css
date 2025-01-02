@@ -712,7 +712,6 @@ header {
     justify-content: space-between;
     background-color: var(--primary);
     border: 2px solid var(--primary);
-    color: #ffffff;
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -721,12 +720,20 @@ header {
     align-items: center;
     transition: transform 0.3s ease-in-out;
     height: 600px;
-    max-height: 100%;
     height: auto;
-    overflow-y: auto;
+    overflow: hidden;
     padding-right: 10px;
 }
 
+.skills-section .tech-stack-container article h3 {
+    color: #ffffff; /* White for contrast on dark cards */
+}
+
+.skills-section .tech-stack-container .tech-card .tech-item-container {
+    overflow-y: auto; /* Allow scrolling for overflowing items */
+    padding-right: 10px; /* Add some padding for scrollbar spacing */
+    max-height: calc(100% - 50px);
+}
 .skills-section .tech-stack-container .tech-card:hover {
     transform: scale(1.05);
 }
@@ -756,6 +763,9 @@ header {
     margin: 10px;
     padding: 15px;
     outline: none; /* Avoid default focus outline */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded edges for logos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Styling for the logos */
