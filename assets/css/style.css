@@ -568,9 +568,8 @@ header {
     font-size: 1rem;
 }
 
-.video-link, .certificate-link {
+.media-container .video-link {
     position: relative;
-    /* display: inline-block; */
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -581,9 +580,10 @@ header {
     cursor: pointer;
 }
 
-.media-container img .award-certificate{
+.media-container .award-certificate {
     max-width: 200px;
     margin: 0 auto;
+    padding: 10px;
     /* aspect-ratio: auto;
     display: flex;
     align-items: center;
