@@ -152,6 +152,9 @@ html, body {
 html, body {
     padding: 0;
     margin: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 html {
@@ -557,23 +560,23 @@ header {
 .media-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
 }
 
-.media-container h4 {
-    font-size: 1rem;
+.cultural-warning {
+    font-size: 0.9rem;
+    line-height: 1.2;
     text-align: center;
-    margin: 0;
-    max-width: 400px;
+    margin-top: 10px;
+    max-width: 350px;
 }
 
-.media-container .video-link,
-.media-container .award-certificate {
+.video-link {
     flex: 1 1 300px;
     position: relative;
     width: 100%;
@@ -586,7 +589,8 @@ header {
 }
 
 .award-certificate {
-    max-width: 200px;
+    flex: 1 1 300px;
+    max-width: 350px;
     border-radius: 10px;
     padding: 10px;
     /* aspect-ratio: auto;
@@ -597,10 +601,10 @@ header {
 
 .video-thumbnail {
     width: 100%;
+    max-width: 350px;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
-    align-items: center;
 }
 
 .play-button {
@@ -1196,12 +1200,13 @@ textarea:focus {
 
 /* footer */
 footer {
-    margin-top: 10px;
+    margin-top: auto;
     border: 2px solid var(--background-dark);
     background-color: var(--primary);
     color: var(--text-light);
     text-align: center;
     padding: 20px;
+    flex-shrink: 0;
 }
 
     /* mobile-first */
