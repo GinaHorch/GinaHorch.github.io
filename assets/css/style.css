@@ -153,13 +153,15 @@ html, body {
     padding: 0;
     margin: 0;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
 }
 
 html {
     scroll-behavior: smooth;
-    min-height: 100%;
+    min-height: 100vh;
+    border: 1px solid var(--background-dark);
+    box-sizing: border-box;
 }
 
 body {
@@ -169,12 +171,14 @@ body {
     font-weight: 400;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     overflow-y: scroll;
-    max-width: 90%;
-    max-width: 1200px;
+    /* max-width: 90%; */
+    /* max-width: 1200px; */
+    padding: 0px 20px;
     margin: 0 auto;
     border: 1px solid var(--background-dark);
 }
@@ -672,38 +676,27 @@ header {
     font-size: 1.5rem;
     color: var(--accent);
 }
-/* resume section in about.html */
-/* .resume-section {
+/* agile-tools in about.html */
+
+#agile-tools {
     text-align: center;
-    padding: 20px;
-    background-color: var(--background-light);
-    border-radius: 10px;
-}
-
-.resume-section h2 {
-    font-size: 1.6rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
     margin-bottom: 15px;
+    padding: 0 10px;
 }
-
-.resume-section a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.resume-section img.resume-icon {
-    margin-right: 10px;
-}
-
-.resume-section img.resume-icon:hover {
-    color: var(--accent);
-} */
 
 /* Section 4: My tech Skills/interactive tech stack */
 
 .skills-section {
-    padding: 10px;
-    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--neutral-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skills-section h2 {
@@ -726,7 +719,7 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     width: 100%;
-    padding: 0 10px;
+    padding: 20px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -1122,9 +1115,9 @@ header {
     display: flex; 
     flex-direction: column; 
     justify-content: center; 
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 48px 16px;
-    max-width: 700px;
+    max-width: 800px;
     background-color: var(--neutral-light);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -1160,8 +1153,8 @@ textarea:focus {
 }
 
 .contact-form h2 {
-    font-size: 2.4rem;
-    margin-bottom: 24px;
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: var(--text-color);
     text-align: center;
 }
