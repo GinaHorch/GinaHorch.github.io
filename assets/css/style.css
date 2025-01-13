@@ -556,6 +556,7 @@ header {
 article.news {
     background-color: var(--neutral-light);
     border-radius: 10px;
+    padding: 20px;
 }
 
 .news h2 {
