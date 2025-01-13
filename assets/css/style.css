@@ -555,7 +555,7 @@ header {
     align-self: center;
 }
 
-.news h3 {
+.news h2 {
     font-size: 1.2rem;
     text-align: center;
 }
@@ -678,7 +678,7 @@ header {
 }
 /* agile-tools in about.html */
 
-#agile-tools {
+.agile-section p {
     text-align: center;
     font-size: 1.1rem;
     line-height: 1.5;
