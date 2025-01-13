@@ -160,7 +160,6 @@ html, body {
 html {
     scroll-behavior: smooth;
     min-height: 100vh;
-    border: 1px solid var(--background-dark);
     box-sizing: border-box;
 }
 
@@ -180,7 +179,6 @@ body {
     /* max-width: 1200px; */
     padding: 0px 20px;
     margin: 0 auto;
-    border: 1px solid var(--background-dark);
 }
 
 @media (min-width: 768px) {
@@ -534,7 +532,7 @@ header {
 .bio-text a {
     display: flex;
     padding: 5px 10px;
-    border: 2px solid var(--background-light);
+    /* border: 2px solid var(--background-light); */
     color: var(--text-light);
     border-radius: 5px;
     margin-right: 10px;
@@ -555,9 +553,15 @@ header {
     align-self: center;
 }
 
+article.news {
+    background-color: var(--neutral-light);
+    border-radius: 10px;
+}
+
 .news h2 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 /* Container for video and certificate images */
@@ -678,6 +682,14 @@ header {
 }
 /* agile-tools in about.html */
 
+section.agile-section {
+    background-color: var(--neutral-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
 .agile-section p {
     text-align: center;
     font-size: 1.1rem;
@@ -686,6 +698,12 @@ header {
     padding: 0 10px;
 }
 
+.agile-section h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
 /* Section 4: My tech Skills/interactive tech stack */
 
 .skills-section {
@@ -1116,21 +1134,19 @@ header {
     flex-direction: column; 
     justify-content: center; 
     margin: 40px auto;
-    padding: 48px 16px;
+    padding: 30px 20px;
     max-width: 800px;
     background-color: var(--neutral-light);
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 .contact-form input,
 .contact-form textarea {
     display: block;
     width: 100%;
-    padding: 12px;
-    margin-bottom: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
     border: 1px solid var(--neutral-mid);
     font-family: "Poppins", sans-serif;
