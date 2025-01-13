@@ -889,12 +889,14 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 20px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     /* border: 1px solid var(--action); */
     background-color: var(--primary);
     color: var(--text-light);
-    max-width: 1200px;
+    /* max-width: 1600px; */
+    border-radius: 10px;
 }
 
 .project-section h2 {
@@ -1201,12 +1203,14 @@ textarea:focus {
 /* footer */
 footer {
     margin-top: auto;
+    margin-bottom: 10px;
     border: 2px solid var(--background-dark);
     background-color: var(--primary);
     color: var(--text-light);
     text-align: center;
     padding: 20px;
     flex-shrink: 0;
+    border-radius: 10px;
 }
 
     /* mobile-first */
