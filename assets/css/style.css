@@ -207,9 +207,10 @@ a {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--primary);
     color: var(--text-light);
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     margin: 0;
     width: 100%;
     top: 0;
@@ -217,15 +218,21 @@ header {
 }
 
 .right img.rainbow {
-    position: absolute;
-    top: 5px;
-    right: 10px;
-    max-height: 40px;
+    position: relative; /* Avoid absolute positioning unless necessary */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: 2.5rem;
     width: auto;
+    margin-left: auto; /* Push the flag to the far right within the flex container */
+    margin-right: 0.625rem; /* Add some spacing from the edge */
     object-fit: contain;
-    margin-bottom: 5px;  
 }
 
+@media (max-width: 45rem) {
+    .right img.rainbow {
+        max-height: 1.875rem;
+        margin-right: 0.3125rem;
+    }
+}
 /* Navbar */ 
 
 /* Mobile-first: Hidden menu by default on mobile */
