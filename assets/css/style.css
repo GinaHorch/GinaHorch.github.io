@@ -282,7 +282,7 @@ header {
 }
 
 /* Larger screens: Enhance for desktop */
-@media (min-width: 720px) {
+@media (min-width: 768px) {
     #menu {
       display: flex;
       flex-direction: row;
@@ -295,7 +295,7 @@ header {
     }
 
     .right img.rainbow {
-        max-height: 2.5rem;
+        max-height: 2rem;
     }
 }
  /* Sticky navbar for larger screens */
@@ -800,6 +800,8 @@ section.agile-section {
 }
 .skills-section .tech-stack-container .tech-card:hover {
     transform: scale(1.05);
+    background-color: #ffffff; /* Ensure it stays white after hover */
+    transition: background-color 0.3s ease-in-out;
 }
 
 .skills-section .tech-stack-container .tech-card::-webkit-scrollbar {
