@@ -222,17 +222,12 @@ header {
     height: auto; /* Maintain the aspect ratio */
     max-height: 2.5rem;
     width: auto;
+    padding: 0.625rem 0.625rem;
     margin-left: auto; /* Push the flag to the far right within the flex container */
     margin-right: 0.625rem; /* Add some spacing from the edge */
     object-fit: contain;
 }
 
-@media (max-width: 45rem) {
-    .right img.rainbow {
-        max-height: 1.875rem;
-        margin-right: 0.3125rem;
-    }
-}
 /* Navbar */ 
 
 /* Mobile-first: Hidden menu by default on mobile */
@@ -286,7 +281,7 @@ header {
     }
 
     .right img.rainbow {
-        position: absolute;
+        position: relative;
         width: 70px;
         top: 10px;
         right: 10px;
@@ -558,6 +553,16 @@ header {
 .bio-text a i {
     padding: 5px;
     align-self: center;
+}
+
+.bio-text .certificate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    gap: 10px;
 }
 
 article.news {
