@@ -208,9 +208,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     background-color: var(--primary);
     color: var(--text-light);
-    padding: 0.625rem 1.25rem;
+    padding: 1rem;
     margin: 0;
     width: 100%;
     top: 0;
@@ -218,13 +219,12 @@ header {
 }
 
 .right img.rainbow {
-    position: relative; /* Avoid absolute positioning unless necessary */
-    height: auto; /* Maintain the aspect ratio */
-    max-height: 2.5rem;
-    width: auto;
-    padding: 0.625rem 0.625rem;
-    margin-left: auto; /* Push the flag to the far right within the flex container */
-    margin-right: 0.625rem; /* Add some spacing from the edge */
+    position: absolute; /* Keep it in the top right */
+    top: 10px; /* Add padding from the top */
+    right: 10px; /* Add padding from the right */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 3rem; /* Scale size appropriately */
+    width: auto; /* Adjust width proportionally */
     object-fit: contain;
 }
 
@@ -267,12 +267,26 @@ header {
     outline: 2px solid var(--accent);
 }
 
+/* Hidden menu by default for mobile */
+#menu {
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Larger screens: Enhance for desktop */
 @media (min-width: 720px) {
     #menu {
       display: flex;
       flex-direction: row;
-      gap: 24px;
+      gap: 2rem;
       align-items: center;
     }
 
@@ -281,10 +295,7 @@ header {
     }
 
     .right img.rainbow {
-        position: relative;
-        width: 70px;
-        top: 10px;
-        right: 10px;
+        max-height: 2.5rem;
     }
 }
  /* Sticky navbar for larger screens */
@@ -557,7 +568,7 @@ header {
 
 .bio-text .certificate {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-top: 10px;
