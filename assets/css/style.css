@@ -800,8 +800,6 @@ section.agile-section {
 }
 .skills-section .tech-stack-container .tech-card:hover {
     transform: scale(1.05);
-    background-color: #ffffff; /* Ensure it stays white after hover */
-    transition: background-color 0.3s ease-in-out;
 }
 
 .skills-section .tech-stack-container .tech-card::-webkit-scrollbar {
@@ -822,21 +820,23 @@ section.agile-section {
 
 /* Styling each tech item (logo + name) following mobile first*/
 .skills-section .tech-stack-container .tech-card .tech-item {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    margin: 10px;
-    padding: 15px;
-    outline: none; /* Avoid default focus outline */
+    flex: 1 1 100%;
+    max-width: 100px; /* Prevent items from growing too large */
+    min-width: 80px; /* Prevent items from shrinking too small */
+    margin: 10px; /* Space between items */
+    padding: 15px; /* Padding inside items */
     background-color: #ffffff; /* Light background for contrast */
     border: 2px solid #ffffff;
     border-radius: 8px; /* Rounded edges for logos */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Maintain flex layout */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Smooth scaling on hover */
+    position: relative; /* For tooltip positioning */
+    outline: none; /* Avoid default focus outline */
 }
 
 /* Styling for the logos */
@@ -868,6 +868,8 @@ section.agile-section {
 /* Hover effect: Enlarge logo and show tech name */
 .skills-section .tech-stack-container .tech-card .tech-item:hover .tech-logo {
     transform: scale(1.2); /* Slightly enlarge */
+    background-color: #ffffff; /* Ensure it stays white after hover */
+    transition: background-color 0.3s ease-in-out;
 }
 
 .skills-section .tech-stack-container .tech-card .tech-item:hover .tech-name {
@@ -896,14 +898,18 @@ section.agile-section {
     }
 
     .skills-section .tech-stack-container .tech-card .tech-item {
-        width: 100px; /* Slightly larger tech item on tablet */
+        max-width: 100px; /* Slightly larger tech item on tablet */
+        min-width: 80px;
+        flex: 1 1 calc(50% - 20px);
     }
 }
 
 /* Media queries for large desktop */
 @media (min-width: 1024px) {
     .skills-section .tech-stack-container .tech-card .tech-item {
-        width: 120px; /* Adjust for large desktops */
+        max-width: 120px; /* Adjust for large desktops */
+        min-width: 100px;
+        flex: 1 1 calc(33.33% - 20px); /* Adjust for desktop */
     }
 }
 
