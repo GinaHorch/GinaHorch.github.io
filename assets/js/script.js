@@ -39,3 +39,26 @@ document.querySelectorAll('.tech-item').forEach(item => {
       item.style.backgroundColor = 'transparent'; // Reset background
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.getElementById("portfolio-modal");
+  const closeBtn = document.querySelector(".close-modal");
+
+  // Check if the modal has been seen before
+  if (!localStorage.getItem("seenModal")) {
+    modal.style.display = "flex"; // Show modal
+
+    // Close modal when user clicks 'X' or outside the modal
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+      localStorage.setItem("seenModal", "true"); // Save in localStorage
+    });
+
+    window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+        localStorage.setItem("seenModal", "true");
+      }
+    });
+  }
+});
